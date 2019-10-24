@@ -1,0 +1,15 @@
+<div class="mdl-grid fixed-width">
+  <nav class="mdl-paging" role="navigation">
+      {{#if prev}}
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon" href="{{page_url prev}}">
+          <i class="icon-angle-left"></i>
+        </a>
+      {{/if}}
+      <span class="mdl-paging__numbers">Page {{page}} of {{pages}}</span>
+      {{#if next}}
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon" href="{{page_url next}}">
+          <i class="icon-angle-right">&raquo;</i>
+        </a>
+      {{/if}}
+  </nav>
+</div>

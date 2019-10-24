@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{#post}}
+
+<main class="mdl-layout__content" role="main">
+  <div class="page-content">
+
+    <div class="mdl-grid mdl-grid-fs fixed-width">
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      <div class="mdl-cell mdl-cell--8-col">
+        {{> bsa-1  }}
+        <article class="mdl-card mdl-card__large mdl-card--no-spacing angular-expo--shadow">
+          <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+              {{content}}
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{{/post}}

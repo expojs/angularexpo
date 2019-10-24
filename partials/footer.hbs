@@ -1,0 +1,60 @@
+<div class="bsa-footer mdl-color--white">
+  {{> bsa-2  }}
+</div>
+
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+    <div class="mdl-grid fixed-width">
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h3 class="mdl-mega-footer__heading">About</h3>
+        <p class="mdl-mega-footer__link-list mdl-mega-footer__text">
+          Angular Expo is a beautiful showcase of websites, applications and experiments using the Angular JavaScript framework. Angular Expo has over 75+ AngularJS examples, including demos.
+        </p>
+      </div>
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h3 class="mdl-mega-footer__heading">Angular</h3>
+        <p class="mdl-mega-footer__link-list mdl-mega-footer__text">
+          AngularJS is a structural open-source JavaScript framework for dynamic web apps. AngularJS is used by all kinds of companies including Google, NBC, Intel and ABC News.
+        </p>
+      </div>
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h3 class="mdl-mega-footer__heading">Links</h3>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a target="_blank" href="https://angular.io/">Official Website</a></li>
+          <li><a target="_blank" href="https://angular.io/docs/js/latest/">Official Documentation</a></li>
+          <li><a target="_blank" href="https://www.creative-tim.com/bootstrap-themes/angular-dashboard/?affiliate_id=93321" rel="nofollow" onClick="ga('send', 'event', 'Outbound', 'Footer', 'https://www.creative-tim.com/bootstrap-themes/angular-dashboard/?affiliate_id=93321')">Angular Templates</a></li>
+        </ul>
+      </div>
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h3 class="mdl-mega-footer__heading">Social</h3>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="https://twitter.com/AngularExpo" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/angular-expo/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/AngularExpo" target="_blank">Facebook</a></li>
+          <li><a href="https://plus.google.com/b/111935773320409774129/111935773320409774129" target="_blank">Google+</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section mdl-color--grey-900">
+    <div class="mdl-grid fixed-width">
+      <div class="mdl-logo">
+        {{#if @blog.logo}}<a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}" width="48" height="48" /></a>{{/if}}
+        Angular Expo
+      </div>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{@blog.url}}/about/">About</a></li>
+        <li><a href="mailto:&#112;&#106;&#103;&#046;&#108;&#097;&#114;&#111;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Contact</a></li>
+        <li><a href="{{@blog.url}}/advertise/">Advertise</a></li>
+        <li><a href="#" onclick="dialog.showModal();return false;">Newsletter</a></li>
+        <li><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank" rel="nofollow">Submit link</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>

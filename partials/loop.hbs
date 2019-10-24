@@ -1,0 +1,28 @@
+{{pagination}}
+
+{{#tag}}
+<div class="mdl-grid fixed-width">
+  <div class="mdl-cell mdl-cell--12-col">
+    <h1 class="mdl-typography--display-1">{{name}}{{#if description}} <small>{{description}}</small>{{/if}}</h1>
+  </div>
+</div>
+{{/tag}}
+
+<div class="mdl-grid fixed-width">
+  {{> post-creativetim }}
+
+  {{#foreach posts from="1" to="4"}}
+    {{> post}}
+  {{/foreach}}
+
+  {{#foreach posts from="5" to="9"}}
+    {{> post}}
+  {{/foreach}}
+</div>
+
+{{pagination}}
+
+<script>
+  var randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
+  document.getElementById("theme-" + randomNumber).style.display = "block";
+</script>

@@ -1,0 +1,41 @@
+<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+
+    <div id="top-nav" class="mdl-layout__header-row angular-expo--shadow">
+      <div class="mdl-grid fixed-width">
+        <div class="mdl-layout-spacer"></div>
+        <div class="">
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link mdl-layout--large-screen-only" href="https://www.creative-tim.com/bootstrap-themes/free?ref=angularexpo" target="_blank">Bootstrap Themes</a>
+            <a class="mdl-navigation__link mdl-layout--large-screen-only" href="https://www.creative-tim.com/bootstrap-themes/angular-dashboard/?affiliate_id=93321" target="_blank" onClick="ga('send', 'event', 'Outbound', 'Top', 'https://www.creative-tim.com/bootstrap-themes/angular-dashboard/?affiliate_id=93321')">Angular Themes</a>
+            <a class="mdl-navigation__link" href="https://www.facebook.com/AngularExpo" target="_blank"><i class="icon-facebook"></i></a>
+            <a class="mdl-navigation__link" href="https://twitter.com/AngularExpo" target="_blank"><i class="icon-twitter"></i></a>
+            <a class="mdl-navigation__link" href="https://www.linkedin.com/company/angular-expo/" target="_blank"><i class="icon-linkedin"></i></a>
+            <a class="mdl-navigation__link" href="https://plus.google.com/b/111935773320409774129/111935773320409774129" target="_blank"><i class="icon-gplus"></i></a>
+            {{#if @labs.subscribers}}
+              <a class="mdl-navigation__link mdl-layout--large-screen-only" href="{{@blog.url}}/subscribe/" target="_blank"><i class="icon-rss"></i></a>
+            {{else}}
+              <a class="mdl-navigation__link mdl-layout--large-screen-only" href="{{@blog.url}}/rss/" target="_blank"><i class="icon-rss"></i></a>
+            {{/if}}
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-nav" class="mdl-layout__header-row mdl-color--primary-dark">
+      <div class="mdl-grid fixed-width">
+        <a class="mdl-layout-title" href="{{@blog.url}}">
+          <img alt="Angular Expo" src="{{asset "/img/angular-white-transparent.svg"}}" height="62" width="62">
+          {{@blog.title}}
+        </a>
+        <div class="mdl-layout-spacer"></div>
+        <div class="">
+          <nav class="mdl-navigation">
+            {{#foreach navigation}}
+              <a href="{{url absolute="true"}}" class="mdl-navigation__link {{#if current}} is-active{{/if}} mdl-typography--text-uppercase mdl-typography--font-bold">{{label}}</a>
+            {{/foreach}}
+          </nav>
+        </div>
+      </div>
+    </div>
+
+</header>

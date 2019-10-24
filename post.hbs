@@ -1,0 +1,88 @@
+{{!< default}}
+
+{{#post}}
+
+<main class="mdl-layout__content" role="main">
+  <div class="page-content">
+    <div class="mdl-grid mdl-grid-fs fixed-width">
+      <div class="mdl-cell mdl-cell--8-col mdl-grid mdl-grid-fs">
+        {{> bsa-1  }}
+        <article class="mdl-cell mdl-card mdl-card__large angular-expo--shadow">
+          <a class="mdl-card__media mdl-card__media-large" href="{{ url }}">
+            <img class="article-image" src="{{image}}" border="0" alt="{{title}} - Angular">
+          </a>
+          <div class="mdl-card__supporting-text mdl-card__date">
+              <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+          </div>
+          <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+              {{content}}
+          </div>
+          <div class="mdl-card__actions mdl-card__social">
+
+            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="icon-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="icon-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--linkedin" href="http://www.linkedin.com/shareArticle?url={{url absolute="true"}}&title={{title}}"
+                onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
+                <i class="icon-linkedin"></i>
+                <span class="hidden">LinkedIn</span>
+            </a>
+            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--gplus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+               <i class="icon-gplus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="mdl-grid mdl-grid-fs mdl-grid--fill">
+          {{#next_post}}
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card angular-expo--shadow">
+              <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+                <a class="mdl-card__media" href="{{ url }}">
+                  <div class="article-image" style="background-image:url({{image}})"></div>
+                </a>
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+                </div>
+              </a>
+            </div>
+          {{/next_post}}
+          {{^next_post}}
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          {{/next_post}}
+          {{#prev_post}}
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card angular-expo--shadow">
+              <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+                <a class="mdl-card__media" href="{{ url }}">
+                  <div class="article-image" style="background-image:url({{image}})"></div>
+                </a>
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+                </div>
+              </a>
+            </div>
+          {{/prev_post}}
+        </div>
+
+      </div>
+      <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      {{> sidebar}}
+    </div>
+
+
+
+  </div>
+</main>
+
+{{/post}}
