@@ -1,5 +1,5 @@
 
-<footer class="mdl-mega-footer">
+<footer class="mdl-mega-footer  mdl-color--grey-900">
   <div class="mdl-mega-footer__middle-section">
     <div class="mdl-grid fixed-width">
       <div class="mdl-mega-footer__drop-down-section">
@@ -9,13 +9,7 @@
           Angular Expo is a beautiful showcase of websites, applications and experiments using the Angular JavaScript framework. Angular Expo has over 75+ AngularJS examples, including demos.
         </p>
       </div>
-      <div class="mdl-mega-footer__drop-down-section">
-        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-        <h3 class="mdl-mega-footer__heading">Angular</h3>
-        <p class="mdl-mega-footer__link-list mdl-mega-footer__text">
-          AngularJS is a structural open-source JavaScript framework for dynamic web apps. AngularJS is used by all kinds of companies including Google, NBC, Intel and ABC News.
-        </p>
-      </div>
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h3 class="mdl-mega-footer__heading">Links</h3>
@@ -35,22 +29,17 @@
           <li><a href="https://plus.google.com/b/111935773320409774129/111935773320409774129" target="_blank">Google+</a></li>
         </ul>
       </div>
-    </div>
-  </div>
-
-  <div class="mdl-mega-footer__bottom-section mdl-color--grey-900">
-    <div class="mdl-grid fixed-width">
-      <div class="mdl-logo">
-        {{#if @blog.logo}}<a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}" width="48" height="48" /></a>{{/if}}
-        Angular Expo
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h3 class="mdl-mega-footer__heading">More Information</h3>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="{{@blog.url}}/about/">About Us</a></li>
+          <li><a href="mailto:angularexpo@gmail.com">Contact</a></li>
+          <li><a href="{{@blog.url}}/advertise/">Advertise</a></li>
+          <li><a href="#" onclick="dialog.showModal();return false;">Newsletter</a></li>
+          <li><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank" rel="nofollow">Submit link</a></li>
+        </ul>
       </div>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="{{@blog.url}}/about/">About</a></li>
-        <li><a href="mailto:angularexpo@gmail.com">Contact</a></li>
-        <li><a href="{{@blog.url}}/advertise/">Advertise</a></li>
-        <li><a href="#" onclick="dialog.showModal();return false;">Newsletter</a></li>
-        <li><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank" rel="nofollow">Submit link</a></li>
-      </ul>
     </div>
   </div>
 
