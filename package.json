@@ -27,9 +27,9 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Paul Laros",
-    "email": "pjg.laros@gmail.com",
-    "url": "https://paullaros.nl"
+    "name": "Angular Expo",
+    "email": "angularexpo@gmail.com",
+    "url": "https://github.com/expojs"
   },
   "gpm": {
     "type": "theme",
