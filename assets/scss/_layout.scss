@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Roboto';
   margin: 0;
   padding: 0;
 }
@@ -533,13 +533,16 @@ img.article-image {
     background-color: #212121 !important;
 }
 
-
-.mdl-color--black {
-    background-color: #111111 !important;
-}
-
 @media screen and (max-width: 1024px) {
   .mdl-layout__header {
     display: flex;
   }
+}
+
+.mdl-color--black {
+    background-color: #111111 !important;
+}
+.mdl-navigation__link img{
+  width: 20px;
+  height: 16px;
 }

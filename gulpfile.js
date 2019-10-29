@@ -58,7 +58,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('replace', ['styles', 'scripts'], function() {
-    return gulp.src('default.hbs')
+    return gulp.src('layout/default.hbs')
       .pipe(htmlReplace(
         {
           'CSS': '<style>' + fs.readFileSync('./assets/css/main.css', 'utf8') + '</style>',
