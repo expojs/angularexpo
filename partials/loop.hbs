@@ -9,15 +9,16 @@
 {{/tag}}
 
 <div class="mdl-grid fixed-width">
+
   {{> post-creativetim }}
 
-  {{#foreach posts from="1" to="4"}}
+  {{#foreach posts from="1" to="9"}}
     {{> post}}
   {{/foreach}}
 
-  {{#foreach posts from="5" to="9"}}
+  <!-- {{#foreach posts from="5" to="9"}}
     {{> post}}
-  {{/foreach}}
+  {{/foreach}} -->
 </div>
 
 {{pagination}}

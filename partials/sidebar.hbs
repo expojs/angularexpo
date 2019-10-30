@@ -1,24 +1,6 @@
 <aside class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
 
-  <div class="mdl-card angular-expo--shadow">
-    <div class="container">
-      <a style="text-decoration: none;" href="https://www.creative-tim.com/product/material-dashboard-pro-angular2/?affiliate_id=93321" rel="nofollow" target="_blank" onclick="ga('send', 'event', 'Outbound', 'Sidebar', 'https://www.creative-tim.com/product/material-dashboard-pro-angular2/?affiliate_id=93321')">
-        <img src="{{asset "img/material-dashboard-pro-angular.jpg"}}" class="article-image" />
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Angular Dashboard</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          Material Dashboard Pro for Angular
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <span class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-            Download
-          </span>
-        </div>
-      </a>
-    </div>
-  </div>
-
+  {{> post-creativetim }}
   <div class="mdl-card angular-expo--shadow">
     <div class="mdl-card__title">
       <h2 class="mdl-card__title-text">Subscribe</h2>
@@ -63,23 +45,15 @@
       {{/get}}
     </div>
   </div>
+  {{> post-creativetim0 }}
 
-  <div class="mdl-card angular-expo--shadow">
-    <div class="container">
-      <a style="text-decoration: none;" href="https://themes.getbootstrap.com/product/spark-responsive-admin-template/" rel="nofollow" target="_blank" onclick="ga('send', 'event', 'Outbound', 'Sidebar', 'https://themes.getbootstrap.com/product/spark-responsive-admin-template/')">
-        <img src="{{asset "img/spark.png"}}" class="article-image" />
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Spark - Dashboard</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          Premium dashboard theme for web applicaties. Powerful code and a clean design makes it easy to use and implement.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <span class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-            Download
-          </span>
-        </div>
-      </a>
-    </div>
-  </div>
+
 </aside>
+
+<script>
+  var randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
+  document.getElementById("theme-" + randomNumber).style.display = "block";
+  var randomNumber2 = Math.floor(Math.random() * (2 - 1 + 1)) + 3;
+  document.getElementById("theme-" + randomNumber2).style.display = "block";
+
+</script>

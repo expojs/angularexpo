@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//s3.buysellads.com">
+  <link rel="dns-prefetch" href="//google-analytics.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+  <title>{{#if post.title}}{{meta_title}} - {{@blog.title}}{{else}}{{meta_title}}{{/if}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="manifest" href="{{asset "/manifest.json"}}">
+  <link rel="shortcut icon" href="{{asset "/img/favicon.ico"}}">
+  <link rel="icon" sizes="128x128" href="{{asset "/img/icon_128.png"}}">
+
+  <link rel="stylesheet" href="{{asset 'assets/css/main.css'}}">
+
+  {{ghost_head}}
+
+</head>
+<body class="{{body_class}} mdl-color-text--grey-700 mdl-base">
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    {{navigation}}
+    {{{body}}}
+    {{> footer}}
+  </div>
+
+  {{ghost_foot}}
+  <!-- build:JS -->
+  <script>var bsa=document.createElement("script");bsa.type="text/javascript",bsa.async=!0,bsa.src="//s3.buysellads.com/ac/bsa.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(bsa);
+!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src="//www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-19102604-15","auto"),ga("send","pageview");
+WebFontConfig={google:{families:["Roboto:300,400"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script>
+  <!-- endbuild -->
+
+</body>
+</html>
