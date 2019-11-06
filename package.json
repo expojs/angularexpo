@@ -4,7 +4,8 @@
   "demo": "https://angularexpo.com",
   "version": "1.0.0",
   "engines": {
-    "ghost": "3.0.0"
+    "ghost": "3.0.0",
+    "ghost-api": "v3"
   },
   "dependencies": {
     "del": "^2.2.2",
@@ -39,6 +40,10 @@
   },
   "keywords": [
     "ghost",
-    "theme"
-  ]
+    "theme",
+    "ghost-theme"
+  ],
+  "config": {
+    "posts_per_page": 8
+  }
 }

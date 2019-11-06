@@ -12,9 +12,9 @@
             <a class="mdl-navigation__link" href="https://www.linkedin.com/company/angular-expo/" target="_blank"><i class="icon-linkedin"></i></a>
             <a class="mdl-navigation__link" href="https://github.com/expojs" target="_blank"><i class="icon-github-circled"></i></a>
             {{#if @labs.subscribers}}
-              <a class="mdl-navigation__link mdl-layout--large-screen-only" href="{{@blog.url}}/subscribe/" target="_blank"><i class="icon-rss"></i></a>
+              <a class="mdl-navigation__link mdl-layout--large-screen-only" href="{{@site.url}}/subscribe/" target="_blank"><i class="icon-rss"></i></a>
             {{else}}
-              <a class="mdl-navigation__link mdl-layout--large-screen-only" href="{{@blog.url}}/rss/" target="_blank"><i class="icon-rss"></i></a>
+              <a class="mdl-navigation__link mdl-layout--large-screen-only" href="{{@site.url}}/rss/" target="_blank"><i class="icon-rss"></i></a>
             {{/if}}
           </nav>
         </div>
@@ -23,9 +23,9 @@
 
     <div id="main-nav" class="mdl-layout__header-row mdl-color--primary-dark">
       <div class="mdl-grid fixed-width">
-        <a class="mdl-layout-title" href="{{@blog.url}}">
+        <a class="mdl-layout-title" href="{{@site.url}}">
           <img alt="Angular Expo" src="{{asset "/img/angular-white-transparent.svg"}}" height="62" width="62">
-          {{@blog.title}}
+          {{@site.title}}
         </a>
         <div class="mdl-layout-spacer"></div>
         <div class="">

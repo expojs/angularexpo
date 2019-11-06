@@ -9,7 +9,7 @@
         {{> bsa-1  }}
         <article class="mdl-cell mdl-card mdl-card__large angular-expo--shadow">
           <a class="mdl-card__media mdl-card__media-large" href="{{ url }}">
-            <img class="article-image" src="{{image}}" border="0" alt="{{title}} - Angular">
+            <img class="article-image" src="{{feature_image}}" border="0" alt="{{title}} - Angular">
           </a>
           <div class="mdl-card__supporting-text mdl-card__date">
               <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
@@ -48,9 +48,9 @@
         <div class="mdl-grid mdl-grid-fs mdl-grid--fill">
           {{#next_post}}
             <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card angular-expo--shadow">
-              <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+              <a class="read-next-story {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
                 <a class="mdl-card__media" href="{{ url }}">
-                  <div class="article-image" style="background-image:url({{image}})"></div>
+                  <div class="article-image" style="background-image:url({{feature_image}})"></div>
                 </a>
                 <div class="mdl-card__title">
                   <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
@@ -63,9 +63,9 @@
           {{/next_post}}
           {{#prev_post}}
             <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card angular-expo--shadow">
-              <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+              <a class="read-next-story {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
                 <a class="mdl-card__media" href="{{ url }}">
-                  <div class="article-image" style="background-image:url({{image}})"></div>
+                  <div class="article-image" style="background-image:url({{feature_image}})"></div>
                 </a>
                 <div class="mdl-card__title">
                   <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
