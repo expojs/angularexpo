@@ -30,7 +30,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -232,7 +233,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -656,7 +658,8 @@ main {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -1239,7 +1242,8 @@ ul, ol {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -1437,7 +1441,8 @@ ul, ol {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -1811,7 +1816,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -2016,7 +2022,7 @@ input.mdl-button[type="submit"] {
   font-size: 16px;
   line-height: normal;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   padding: 8px;
   box-sizing: border-box; }
   .mdl-card__actions.mdl-card--border {
@@ -2060,7 +2066,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -2330,7 +2337,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -2548,7 +2556,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -2963,7 +2972,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -3607,7 +3617,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -3936,7 +3947,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*------------------------------------*    $CONTENTS
+/*------------------------------------*\
+    $CONTENTS
 \*------------------------------------*/
 /**
  * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
@@ -5200,5 +5212,48 @@ dialog.fixed {
 
 .mdl-card--slide .mdl-card__supporting-text {
   padding: 18px 26px; }
+
+.code-fund {
+  margin: 0;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+  font-size: 12px;
+  line-height: 1.5em;
+  background-color: #fff;
+  border-radius: 4px; }
+  .code-fund .cf-wrapper {
+    padding: 10px !important;
+    background-color: #fff !important;
+    border-radius: 4px;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center; }
+    .code-fund .cf-wrapper .cf-text {
+      color: #333;
+      text-decoration: none; }
+    .code-fund .cf-wrapper .cf-powered-by {
+      box-shadow: none !important;
+      text-decoration: none;
+      margin-top: 5px;
+      font-size: 12px;
+      display: block;
+      color: #777; }
+  .code-fund img {
+    width: 100px;
+    height: 100px;
+    margin-top: 0 !important;
+    margin-bottom: 8px; }
+    .code-fund img[data-src="impression_url"] {
+      position: fixed;
+      left: -1000px;
+      top: -1000px; }
+  .code-fund .cf-img-wrapper {
+    margin-right: 0 !important;
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */
