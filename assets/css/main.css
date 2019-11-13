@@ -4958,7 +4958,7 @@ ul {
 
 /* BSA */
 .bsa-center {
-  width: 728px;
+  width: 300px;
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -4975,7 +4975,6 @@ ul {
 .bsa-center img,
 .bsa-center a {
   width: auto !important;
-  max-width: 100%;
   height: auto; }
 
 .bsa-footer {
@@ -5227,7 +5226,7 @@ dialog.fixed {
     padding: 10px !important;
     background-color: #fff !important;
     border-radius: 4px;
-    display: block;
+    display: flex;
     overflow: hidden;
     font-size: 14px;
     line-height: 1.4;
@@ -5242,6 +5241,8 @@ dialog.fixed {
       font-size: 12px;
       display: block;
       color: #777; }
+    .code-fund .cf-wrapper .cf-media-body {
+      align-self: center; }
   .code-fund img {
     width: 100px;
     height: 100px;
