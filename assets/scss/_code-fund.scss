@@ -13,7 +13,7 @@
     padding: 10px !important;
     background-color: #fff !important;
     border-radius: 4px;
-    display: block;
+    display: flex;
     overflow: hidden;
     font-size: 14px;
     line-height: 1.4;
@@ -30,6 +30,9 @@
      font-size: 12px;
      display: block;
      color: #777;
+    }
+    .cf-media-body{
+      align-self: center;
     }
   }
   img{
