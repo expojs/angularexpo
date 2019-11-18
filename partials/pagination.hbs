@@ -1,4 +1,4 @@
-<div class="mdl-grid fixed-width">
+<!-- <div class="mdl-grid fixed-width">
   <nav class="mdl-paging" role="navigation">
       {{#if prev}}
         <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon" href="{{page_url prev}}">
@@ -12,4 +12,21 @@
         </a>
       {{/if}}
   </nav>
-</div>
+</div> -->
+
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      {{#if prev}}
+        <a class="page-link" href="{{page_url prev}}">PREV</a>
+      {{/if}}
+    </li>
+
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    <li class="page-item">
+      {{#if next}}
+        <a class="page-link" href="{{page_url next}}">NEXT</a>
+      {{/if}}
+    </li>
+  </ul>
+</nav>
