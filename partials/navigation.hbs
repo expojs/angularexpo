@@ -1,4 +1,4 @@
-<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+<!-- <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
 
     <div id="main-nav" class="mdl-layout__header-row mdl-color--primary-dark">
       <div class="mdl-grid fixed-width">
@@ -17,4 +17,21 @@
       </div>
     </div>
 
-</header>
+</header> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="{{@site.url}}">
+      <img alt="Angular Expo" src="{{asset "/img/angular-white-transparent.svg"}}" height="62" width="62">
+      {{@site.title}}
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        {{#foreach navigation}}
+        <li class="nav-item {{#if current}} is-active{{/if}}">
+          <a href="{{url absolute="true"}}" class="nav-link">{{label}}</a>
+        </li>
+        {{/foreach}}
+      </ul>
+    </div>
+  </div>
+</nav>
