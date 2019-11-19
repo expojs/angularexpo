@@ -1,15 +1,19 @@
-<article class="mdl-cell mdl-card angular-expo--shadow" style="max-height: 400px;">
-  <a class="mdl-card__media" href="{{ url }}">
-    <div style="background-image:url({{feature_image}})" title="{{title}}"></div>
+
+<div class="card" style=" margin: 8px;width: calc(33.33333% - 16px);max-height:400px;overflow:hidden">
+  <a class="card-img-top" href="{{ url }}">
+    <div style="background-image:url({{feature_image}}); height:200px;background-repeat: no-repeat;background-position: center center;  background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;transition: all .2s ease;-moz-transition: all .2s ease;-ms-transition: all .2s ease;-webkit-transition: all .2s ease;-o-transition: all .2s ease;overflow: hidden;" title="{{title}}"></div>
   </a>
-  <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a target="_blank" href="{{ url }}" >{{title}}</a>
+    </h2>
+    <p class="card-text">{{content}}</p>
+    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+
   </div>
-  <div class="mdl-card__supporting-text">
-      <div class="content-preview">{{content}}</div>
-      <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+  <div class="card-footer">
+    <h3>
+      <a target="_blank" class="btn btn-link" href="{{ url }}">Read more</a>
+    </h3>
   </div>
-  <div class="mdl-card__actions">
-    <a href="{{ url }}" class="mdl-button">Read more</a>
-  </div>
-</article>
+</div>
