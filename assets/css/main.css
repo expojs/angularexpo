@@ -7083,4 +7083,8 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar .navbar-nav .nav-item .nav-link {
   color: #223464; }
 
+.navbar .navbar-brand img {
+  position: relative;
+  top: -3px; }
+
 /*# sourceMappingURL=main.css.map */

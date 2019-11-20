@@ -6,4 +6,10 @@
   .navbar-nav .nav-item .nav-link{
     color: $text-primary;
   }
+  .navbar-brand{
+    img{
+      position: relative;
+      top: -3px;
+    }
+  }
 }
