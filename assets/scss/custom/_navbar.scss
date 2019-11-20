@@ -1,0 +1,9 @@
+.navbar-transparent{
+  background: transparent !important;
+}
+.navbar{
+  .navbar-brand,
+  .navbar-nav .nav-item .nav-link{
+    color: $text-primary;
+  }
+}

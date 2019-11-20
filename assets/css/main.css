@@ -7076,4 +7076,11 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 12px;
     max-height: 276px; }
 
+.navbar-transparent {
+  background: transparent !important; }
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #223464; }
+
 /*# sourceMappingURL=main.css.map */
