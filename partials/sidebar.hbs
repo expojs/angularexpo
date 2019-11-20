@@ -1,54 +1,49 @@
-<aside class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+{{> post-creativetim }}
+<div class="card  angular-expo--shadow">
+  <div class="card-header">
+    <h2 class="card-title">Subscribe</h2>
+  </div>
+  <div class="card-body">
 
-  {{> post-creativetim }}
-  <div class="mdl-card angular-expo--shadow">
-    <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Subscribe</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
+    Join our monthly newsletter and never miss out on new Angular examples, demos and experiments.
 
-      Join our monthly newsletter and never miss out on new Angular examples, demos and experiments.
-
-      <div id="mc_embed_signup">
-        <form action="//angularexpo.us14.list-manage.com/subscribe/post?u=20206c0829ddb0efe4d35bc7a&amp;id=c32002db8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <div class="mc-field-group mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="required email mdl-textfield__input" type="email" id="mce-EMAIL" name="EMAIL" placeholder="Email Address">
-            </div>
-          	<div id="mce-responses" class="clear">
-          		<div class="response" id="mce-error-response" style="display:none"></div>
-          		<div class="response" id="mce-success-response" style="display:none"></div>
-          	</div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_20206c0829ddb0efe4d35bc7a_c32002db8f" tabindex="-1" value=""></div>
-            <div class="clear">
-              <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                Subscribe
-              </button>
-            </div>
+    <div id="mc_embed_signup">
+      <form action="//angularexpo.us14.list-manage.com/subscribe/post?u=20206c0829ddb0efe4d35bc7a&amp;id=c32002db8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="form-input">
+            <input class="required email mdl-textfield__input" type="email" id="mce-EMAIL" name="EMAIL" placeholder="Email Address">
           </div>
-        </form>
-      </div>
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_20206c0829ddb0efe4d35bc7a_c32002db8f" tabindex="-1" value=""></div>
+          <div class="clear">
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
+</div>
 
-  <div class="mdl-card angular-expo--shadow">
-    <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Recent posts</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
-      {{#get "posts" limit="10" as |recents|}}
-        <ul>
-          {{#foreach recents}}
-            <li><a href="{{url}}">{{title}}</a></li>
-          {{/foreach}}
-        </ul>
-      {{/get}}
-    </div>
+<div class="card angular-expo--shadow">
+  <div class="card-header">
+    <h2 class="card-title">Recent posts</h2>
   </div>
-  {{> post-creativetim0 }}
-
-
-</aside>
+  <div class="card-body">
+    {{#get "posts" limit="10" as |recents|}}
+      <ul>
+        {{#foreach recents}}
+          <li><a href="{{url}}">{{title}}</a></li>
+        {{/foreach}}
+      </ul>
+    {{/get}}
+  </div>
+</div>
+{{> post-creativetim0 }}
 
 <script>
   var randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
