@@ -1,0 +1,15 @@
+.card{
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 8px;
+
+  &.card-static{
+    display: none;
+  }
+
+  .card-img-top{
+    padding: 12px;
+    max-height: 276px;
+  }
+}
