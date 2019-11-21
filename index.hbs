@@ -18,14 +18,24 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-          {{> "loop"}}
-        </div>
-        <div class="col-md-4">
-          {{> sidebar}}
-        </div>
+  <div class="section-search mr-auto ml-auto">
+    <div class="form-group form-search">
+      <input name="q" id="q" class="form-control form-control-search" placeholder="search">
+      <button type="submit" name="button" class="btn btn-white btn-round btn-submit">
+        <i class="icon-search icon-2x"></i>
+      </button>
+    </div>
+  </div>
+  <div class="section-content">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+            {{> "loop"}}
+          </div>
+          <div class="col-md-4">
+            {{> sidebar}}
+          </div>
+      </div>
     </div>
   </div>
 </main>
