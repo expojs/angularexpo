@@ -7,4 +7,11 @@ body{
 a{
   color: $text-primary;
   text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none !important;
+    color: $text-primary !important;
+  }
 }

@@ -7074,6 +7074,9 @@ body {
 a {
   color: #223464;
   text-decoration: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: none !important;
+    color: #223464 !important; }
 
 .card {
   width: 100%;
