@@ -7131,6 +7131,9 @@ a {
   position: relative;
   top: -3px; }
 
+.navbar .nav-social {
+  list-style: none; }
+
 .section-search {
   max-width: 460px;
   margin-bottom: 100px; }
