@@ -7118,7 +7118,8 @@ a {
   top: -3px; }
 
 .section-search {
-  max-width: 460px; }
+  max-width: 460px;
+  margin-bottom: 100px; }
   .section-search .form-search {
     position: relative; }
     .section-search .form-search .form-control-search {
