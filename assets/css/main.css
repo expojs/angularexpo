@@ -7071,6 +7071,10 @@ body {
   font-size: 14px;
   line-height: 1.428571429; }
 
+a {
+  color: #223464;
+  text-decoration: none; }
+
 .card {
   width: 100%;
   max-height: 400px;
