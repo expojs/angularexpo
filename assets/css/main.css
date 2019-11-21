@@ -7066,7 +7066,10 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto; }
 
 body {
-  background-color: #F8F8FF; }
+  background-color: #F8F8FF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429; }
 
 .card {
   width: 100%;
@@ -7118,6 +7121,26 @@ body {
       padding: 6px 20px;
       vertical-align: middle;
       transition: background-color .2s; }
+    .section-search .form-search .btn-submit {
+      position: absolute;
+      right: 10px;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 25px;
+      height: 36px;
+      line-height: 30px;
+      width: 36px;
+      display: block;
+      top: 7px;
+      opacity: .85;
+      background: #da3d28;
+      color: #ffffff;
+      transition: all .2s; }
+      .section-search .form-search .btn-submit .icon-search {
+        font-size: 18px;
+        position: relative;
+        top: -7px;
+        right: 1px; }
 
 .section-header {
   margin-bottom: 150px; }

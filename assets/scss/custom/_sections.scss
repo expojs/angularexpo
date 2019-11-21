@@ -18,6 +18,30 @@
       vertical-align: middle;
       transition: background-color .2s;
     }
+
+    .btn-submit{
+      position: absolute;
+      right: 10px;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 25px;
+      height: 36px;
+      line-height: 30px;
+      width: 36px;
+      display: block;
+      top: 7px;
+      opacity: .85;
+      background: $brand-state;
+      color: #ffffff;
+      transition: all .2s;
+
+      .icon-search{
+        font-size: 18px;
+        position: relative;
+        top: -7px;
+        right: 1px;
+      }
+    }
   }
 }
 .section-header{
