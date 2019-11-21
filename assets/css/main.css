@@ -7092,6 +7092,8 @@ a {
     background-color: transparent;
     border-bottom: none;
     padding: 20px; }
+  .card .card-title {
+    font-size: 18px; }
   .card .card-img-top {
     max-height: 276px;
     border-radius: 8px;
@@ -7099,6 +7101,8 @@ a {
   .card .card-footer {
     background-color: transparent;
     border-top: none; }
+  .card .card-body {
+    padding-top: 0; }
 
 .navbar-transparent {
   background: transparent !important; }

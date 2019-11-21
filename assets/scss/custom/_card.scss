@@ -17,6 +17,10 @@
     padding: 20px;
   }
 
+  .card-title{
+    font-size: 18px;
+  }
+
   .card-img-top{
     max-height: 276px;
     border-radius: 8px;
@@ -26,5 +30,9 @@
   .card-footer{
     background-color: transparent;
     border-top: none;
+  }
+
+  .card-body{
+    padding-top: 0;
   }
 }
