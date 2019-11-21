@@ -7072,7 +7072,7 @@ body {
   width: 100%;
   max-height: 400px;
   overflow: hidden;
-  margin: 8px; }
+  margin-bottom: 30px; }
   .card.card-static {
     display: none; }
   .card .card-img-top {
