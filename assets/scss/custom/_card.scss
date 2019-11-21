@@ -15,10 +15,7 @@
     background-color: transparent;
     border-bottom: none;
     padding: 20px;
-  }
-
-  .card-title{
-    font-size: 18px;
+    padding-bottom: 5px;
   }
 
   .card-img-top{
@@ -38,6 +35,7 @@
 
   .card-body{
     padding-top: 0;
+    padding-bottom: 0;
 
     .tags-area{
       .text-danger a,
@@ -45,6 +43,25 @@
         color: $brand-state !important;
         text-transform: uppercase;
       }
+      .text-danger{
+        font-size: 12px;
+      }
+    }
+
+    .card-title{
+      font-size: 18px;
+      font-weight: bold;
+      color: $card-title;
+
+      &:hover{
+        color: $card-title !important;
+      }
+    }
+
+    .card-text{
+      font-size: 14px;
+      color: #999999;
+      font-weight: lighter;
     }
   }
 }

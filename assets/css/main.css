@@ -7091,9 +7091,8 @@ a {
   .card .card-header {
     background-color: transparent;
     border-bottom: none;
-    padding: 20px; }
-  .card .card-title {
-    font-size: 18px; }
+    padding: 20px;
+    padding-bottom: 5px; }
   .card .card-img-top {
     max-height: 276px;
     border-radius: 6px;
@@ -7104,11 +7103,24 @@ a {
     .card .card-footer .btn-outline-danger:hover {
       color: #ffffff !important; }
   .card .card-body {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
     .card .card-body .tags-area .text-danger a,
     .card .card-body .tags-area .text-danger a:hover {
       color: #da3d28 !important;
       text-transform: uppercase; }
+    .card .card-body .tags-area .text-danger {
+      font-size: 12px; }
+    .card .card-body .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #3C4858; }
+      .card .card-body .card-title:hover {
+        color: #3C4858 !important; }
+    .card .card-body .card-text {
+      font-size: 14px;
+      color: #999999;
+      font-weight: lighter; }
 
 .navbar-transparent {
   background: transparent !important; }
