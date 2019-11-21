@@ -5,7 +5,7 @@
   margin-bottom: 30px;
   border: none;
   box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
-  border-radius: 8px;
+  border-radius: 6px;
 
   &.card-static{
     display: none;
@@ -23,7 +23,7 @@
 
   .card-img-top{
     max-height: 276px;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
   }
 
@@ -38,5 +38,13 @@
 
   .card-body{
     padding-top: 0;
+
+    .tags-area{
+      .text-danger a,
+      .text-danger a:hover{
+        color: $brand-state !important;
+        text-transform: uppercase;
+      }
+    }
   }
 }

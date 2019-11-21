@@ -7085,7 +7085,7 @@ a {
   margin-bottom: 30px;
   border: none;
   box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
-  border-radius: 8px; }
+  border-radius: 6px; }
   .card.card-static {
     display: none; }
   .card .card-header {
@@ -7096,7 +7096,7 @@ a {
     font-size: 18px; }
   .card .card-img-top {
     max-height: 276px;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1); }
   .card .card-footer {
     background-color: transparent;
@@ -7105,6 +7105,10 @@ a {
       color: #ffffff !important; }
   .card .card-body {
     padding-top: 0; }
+    .card .card-body .tags-area .text-danger a,
+    .card .card-body .tags-area .text-danger a:hover {
+      color: #da3d28 !important;
+      text-transform: uppercase; }
 
 .navbar-transparent {
   background: transparent !important; }
@@ -7166,5 +7170,8 @@ a {
       color: #223464;
       display: block;
       font-weight: 300; }
+
+.btn-round {
+  border-radius: 20px; }
 
 /*# sourceMappingURL=main.css.map */
