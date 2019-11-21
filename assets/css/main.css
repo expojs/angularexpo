@@ -7135,7 +7135,7 @@ a {
   list-style: none; }
 
 .section-search {
-  max-width: 460px;
+  max-width: 560px;
   margin-bottom: 100px; }
   .section-search .form-search {
     position: relative; }
@@ -7163,7 +7163,6 @@ a {
       width: 36px;
       display: block;
       top: 7px;
-      opacity: .85;
       background: #da3d28;
       color: #ffffff;
       transition: all .2s; }
@@ -7176,13 +7175,26 @@ a {
 .section-header {
   margin-bottom: 150px; }
   .section-header .form-group.form-subscribe {
-    max-width: 260px; }
+    max-width: 319px;
+    position: relative; }
     .section-header .form-group.form-subscribe .form-control {
       border-radius: 30px;
       border: 1px solid #223464;
       color: #223464;
       display: block;
-      font-weight: 300; }
+      font-weight: 400;
+      font-size: 14px; }
+    .section-header .form-group.form-subscribe .btn-submit {
+      position: absolute;
+      right: 4px;
+      border: none;
+      border-radius: 30px;
+      display: block;
+      font-weight: 200;
+      top: 3px;
+      background: #da3d28;
+      color: #ffffff;
+      transition: all .2s; }
 
 .btn-round {
   border-radius: 20px; }

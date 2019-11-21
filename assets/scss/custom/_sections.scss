@@ -1,7 +1,7 @@
 .section-search{
-  max-width: 460px;
+  max-width: 560px;
   margin-bottom: 100px;
-  
+
   .form-search{
     position: relative;
 
@@ -31,7 +31,6 @@
       width: 36px;
       display: block;
       top: 7px;
-      opacity: .85;
       background: $brand-state;
       color: #ffffff;
       transition: all .2s;
@@ -49,14 +48,28 @@
   margin-bottom: 150px;
 
   .form-group.form-subscribe{
-    max-width: 260px;
+    max-width: 319px;
+    position: relative;
 
     .form-control{
       border-radius: 30px;
       border: 1px solid $text-primary;
       color: $text-primary;
       display: block;
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .btn-submit{
+      position: absolute;
+      right: 4px;
+      border: none;
+      border-radius: 30px;
+      display: block;
+      font-weight: 200;
+      top: 3px;
+      background: $brand-state;
+      color: #ffffff;
+      transition: all .2s;
     }
   }
 }
