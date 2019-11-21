@@ -1,17 +1,15 @@
-<div class="d-flex flex-wrap">
-  
-  <div class="row">
-    <div class="col-md-6">
-      {{> post-creativetim }}
-    </div>
-    {{#foreach posts from="1" to="9"}}
-      <div class="col-md-6">
-          {{> post}}
-      </div>
-    {{/foreach}}
-  </div>
 
+<div class="row">
+  <div class="col-md-6">
+    {{> post-creativetim }}
+  </div>
+  {{#foreach posts from="1" to="9"}}
+    <div class="col-md-6">
+        {{> post}}
+    </div>
+  {{/foreach}}
 </div>
+
 
 {{pagination}}
 
