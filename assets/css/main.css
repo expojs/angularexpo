@@ -7079,10 +7079,11 @@ a {
     color: #223464 !important; }
 
 .image-svg {
-  width: 80%;
+  width: 115%;
   position: absolute;
-  top: 0;
-  right: 0; }
+  margin-top: -58px;
+  right: 0;
+  z-index: -1; }
 
 .card {
   width: 100%;
@@ -7151,7 +7152,7 @@ a {
       border: none;
       color: #223464;
       display: block;
-      font-size: 20px;
+      font-size: 14px;
       font-weight: 300;
       height: 50px;
       line-height: 1.42857;
@@ -7180,6 +7181,9 @@ a {
 
 .section-header {
   margin-bottom: 150px; }
+  .section-header .text-description {
+    font-size: 14px;
+    font-weight: lighter; }
   .section-header .form-group.form-subscribe {
     max-width: 319px;
     position: relative; }

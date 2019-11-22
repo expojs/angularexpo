@@ -17,8 +17,9 @@ a{
 }
 
 .image-svg{
-  width: 80%;
+  width: 115%;
   position: absolute;
-  top: 0;
+  margin-top: -58px;
   right: 0;
+  z-index: -1;
 }

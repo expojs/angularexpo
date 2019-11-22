@@ -11,7 +11,7 @@
       border: none;
       color: $text-primary;
       display: block;
-      font-size: 20px;
+      font-size: 14px;
       font-weight: 300;
       height: 50px;
       line-height: 1.42857;
@@ -46,6 +46,11 @@
 }
 .section-header{
   margin-bottom: 150px;
+
+  .text-description{
+    font-size: 14px;
+    font-weight: lighter;
+  }
 
   .form-group.form-subscribe{
     max-width: 319px;

@@ -4,23 +4,24 @@
   <div class="section section-header">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 text-sm-left text-center">
+        <div class="col-lg-4 col-12 text-sm-left text-center">
           <img alt="Angular Expo" src="{{asset "/img/logo/angular.png"}}" height="60" width="60" style="margin-top: 100px">
           <h1>{{@site.title}}</h1>
-          <p>{{@site.description}}</p>
+          <p class="text-description">{{@site.description}}</p>
           <div class="form-group form-subscribe">
             <input type="text" placeholder="Your email" class="form-control">
             <button type="button" name="button" class="btn btn-round btn-danger btn-submit btn-sm">Subscribe</button>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8 d-lg-block d-none">
+          <img src="{{asset "/img/illustratio_header.svg"}}" alt="asd" class="image-svg">
         </div>
       </div>
     </div>
   </div>
   <div class="section-search mr-auto ml-auto">
     <div class="form-group form-search">
-      <input name="q" id="q" class="form-control form-control-search" placeholder="search">
+      <input name="q" id="q" class="form-control form-control-search" placeholder="Search products">
       <button type="submit" name="button" class="btn btn-white btn-round btn-submit">
         <i class="icon-search fa fa-search"></i>
       </button>
