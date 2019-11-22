@@ -7213,6 +7213,7 @@ a {
 
 .pagination .page-number {
   font-size: 12px;
+  text-transform: uppercase;
   color: #223464; }
 
 /*# sourceMappingURL=main.css.map */
