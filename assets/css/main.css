@@ -7132,14 +7132,22 @@ a {
 
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #223464; }
+  color: #223464;
+  font-size: 14px;
+  font-weight: 400; }
 
-.navbar .navbar-brand img {
-  position: relative;
-  top: -3px; }
+.navbar .navbar-brand {
+  font-weight: lighter;
+  margin-top: 2px; }
+  .navbar .navbar-brand img {
+    position: relative;
+    top: -2px; }
 
 .navbar .nav-social {
   list-style: none; }
+  .navbar .nav-social .nav-item .btn {
+    font-size: 14px;
+    font-weight: lighter; }
 
 .section-search {
   max-width: 560px;
