@@ -7199,4 +7199,14 @@ a {
 .btn-round {
   border-radius: 20px; }
 
+.pagination .page-item .page-link {
+  font-size: 12px;
+  background: transparent;
+  color: #223464;
+  border: none; }
+
+.pagination .page-number {
+  font-size: 12px;
+  color: #223464; }
+
 /*# sourceMappingURL=main.css.map */
