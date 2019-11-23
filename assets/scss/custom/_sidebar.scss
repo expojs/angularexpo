@@ -1,0 +1,30 @@
+.card-tags{
+  .card-header{
+    h5{
+      margin-bottom: 0;
+    }
+  }
+  .card-body{
+    .tags-menu{
+      list-style: none;
+      padding: 0;
+
+      li{
+        display: flex;
+        border-bottom: 1px solid #D8D8D8;
+        padding: 7px 0;
+
+        p{
+          margin: 0;
+          margin-left: auto;
+          right: 10px;
+          position: relative;
+        }
+
+        a{
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

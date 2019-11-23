@@ -7228,4 +7228,22 @@ a {
   text-transform: uppercase;
   color: #223464; }
 
+.card-tags .card-header h5 {
+  margin-bottom: 0; }
+
+.card-tags .card-body .tags-menu {
+  list-style: none;
+  padding: 0; }
+  .card-tags .card-body .tags-menu li {
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 7px 0; }
+    .card-tags .card-body .tags-menu li p {
+      margin: 0;
+      margin-left: auto;
+      right: 10px;
+      position: relative; }
+    .card-tags .card-body .tags-menu li a {
+      text-transform: uppercase; }
+
 /*# sourceMappingURL=main.css.map */
