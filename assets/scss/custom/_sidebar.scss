@@ -28,3 +28,33 @@
     }
   }
 }
+
+.card-subscribe{
+  p{
+    font-weight: lighter;
+  }
+
+  .card-body{
+    padding-bottom: 30px;
+
+    .form-input{
+      .text-input{
+        width: 100%;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid #D8D8D8;
+        color: #999999;
+        font-size: 14px;
+
+        &:focus,&:active,&:hover{
+          outline: none;
+
+        }
+      }
+    }
+
+    .submit-button{
+      padding-top: 20px;
+    }
+  }
+}

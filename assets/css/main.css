@@ -7246,4 +7246,21 @@ a {
     .card-tags .card-body .tags-menu li a {
       text-transform: uppercase; }
 
+.card-subscribe p {
+  font-weight: lighter; }
+
+.card-subscribe .card-body {
+  padding-bottom: 30px; }
+  .card-subscribe .card-body .form-input .text-input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #D8D8D8;
+    color: #999999;
+    font-size: 14px; }
+    .card-subscribe .card-body .form-input .text-input:focus, .card-subscribe .card-body .form-input .text-input:active, .card-subscribe .card-body .form-input .text-input:hover {
+      outline: none; }
+  .card-subscribe .card-body .submit-button {
+    padding-top: 20px; }
+
 /*# sourceMappingURL=main.css.map */
