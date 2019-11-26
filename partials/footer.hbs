@@ -2,13 +2,13 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-6 ml-auto mr-auto d-flex">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto d-flex justify-content-center">
         <div class="vuejs-expo">
           <a href="/madewithreact" class="float-buttons ml-auto mr-auto">
             <img src="{{asset "img/icon_48.png"}}" alt="angular">
           </a>
           <a href="/madewithreact">
-            vuejsexpo
+            Vuejs Expo
           </a>
         </div>
         <div class="made-with-react">
@@ -16,19 +16,19 @@
             <img src="{{asset "img/icon_48.png"}}" alt="angular">
           </a>
           <a href="/madewithreact">
-            madewithreact
+            Made with React
           </a>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row p-5">
       <div class="col-md-3">
-        <h5><b style="padding-left:1px;">About</b></h5>
+        <h5><b>Angular Expo</b></h5>
         <p>
           Angular Expo is a beautiful showcase of websites, applications and experiments using the Angular JavaScript framework. Angular Expo has over 75+ AngularJS examples, including demos.
         </p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <h5><b>Links</b></h5>
         <ul class="nav flex-column list-unstyled">
           <li class="nav-item"><a target="_blank" href="https://angular.io/">Official Website</a></li>
@@ -37,11 +37,18 @@
           <li class="nav-item"><a target="_blank" href="https://github.com/expojs/angularexpo">Github Angular Expo</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
+        <h5><b>About us</b></h5>
+        <ul class="nav flex-column list-unstyled">
+          <li class="nav-item"><a href="{{@site.url}}/blog/">Blog</a></li>
+          <li class="nav-item"><a href="{{@site.url}}/about/">About Us</a></li>
+          <li class="nav-item"><a href="mailto:angularexpo@gmail.com">Contact us</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-2">
         <h5><b>More Information</b></h5>
         <ul class="nav flex-column list-unstyled">
-          <li class="nav-item"><a href="{{@site.url}}/about/">About Us</a></li>
-          <li class="nav-item"><a href="mailto:angularexpo@gmail.com">Contact</a></li>
           <li class="nav-item"><a href="{{@site.url}}/advertise/">Advertise</a></li>
           <li class="nav-item"><a href="#" onclick="dialog.showModal();return false;">Newsletter</a></li>
           <li class="nav-item"><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank">Submit link</a></li>
@@ -57,5 +64,21 @@
         </ul>
       </div>
     </div>
+    <hr>
+    <div class="social-area ml-auto mr-auto">
+      <ul class="footer-social ml-auto mr-auto justify-content-center">
+        <li class="nav-item">
+          <a href="#ceva" class="nav-link"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#ceva" class="nav-link"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#ceva" class="nav-link"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p class="text-center">Copyright © 2019 Angular Expo. All Rights Reserved.</p>
+    </div>
+
   </div>
 </footer>
