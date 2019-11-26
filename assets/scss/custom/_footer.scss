@@ -1,0 +1,26 @@
+.footer{
+  background-color: #FCFCFF;
+  padding-top: 15px;
+  
+  .made-with-react, .vuejs-expo{
+    /* To correctly align image, regardless of content height: */
+   vertical-align: top;
+   display: inline-block;
+   /* To horizontally center images and caption */
+   text-align: center;
+   /* The width of the container also implies margin around the images. */
+   width: 120px;
+
+   .float-buttons{
+     display: block;
+     background-color: #fff;
+     border-radius: 50%;
+     box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
+     height: 60px;
+     width: 60px;
+     img{
+       padding: 6px;
+     }
+   }
+  }
+}

@@ -7263,4 +7263,25 @@ a {
   .card-subscribe .card-body .submit-button {
     padding-top: 20px; }
 
+.footer {
+  background-color: #FCFCFF;
+  padding-top: 15px; }
+  .footer .made-with-react, .footer .vuejs-expo {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 120px; }
+    .footer .made-with-react .float-buttons, .footer .vuejs-expo .float-buttons {
+      display: block;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
+      height: 60px;
+      width: 60px; }
+      .footer .made-with-react .float-buttons img, .footer .vuejs-expo .float-buttons img {
+        padding: 6px; }
+
 /*# sourceMappingURL=main.css.map */
