@@ -1,8 +1,20 @@
 {{!< layouts/default}}
 
 <main class="content" role="main">
-  {{> bsa-1  }}
-  <div class="page-content">
-    {{> "loop"}}
+  <div class="section-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {{> "loop"}}
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              {{> sidebar}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
