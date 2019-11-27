@@ -2,28 +2,3 @@
   {{> bsa-1  }}
 </div>
 {{> post-creativetim0 }}
-
-<div class="card angular-expo--shadow">
-  <div class="card-header">
-    <h2 class="card-title">Recent posts</h2>
-  </div>
-  <div class="card-body">
-    {{#get "posts" limit="10" as |recents|}}
-      <ul>
-        {{#foreach recents}}
-          <li><a href="{{url}}">{{title}}</a></li>
-        {{/foreach}}
-      </ul>
-    {{/get}}
-  </div>
-</div>
-
-<script>
-  var randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
-  var randomNumber2 = Math.floor(Math.random() * (2 - 1 + 1)) + 3;
-
-  document.getElementById("theme-3").style.display = "block";
-  document.getElementById("theme-4").style.display = "block";
-  // document.getElementById("theme-" + randomNumber2).style.display = "block";
-
-</script>

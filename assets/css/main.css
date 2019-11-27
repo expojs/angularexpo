@@ -7110,14 +7110,16 @@ a {
   .card .card-body {
     padding-top: 0;
     padding-bottom: 0; }
-    .card .card-body .tags-area .text-danger a,
-    .card .card-body .tags-area .text-danger a:hover {
-      color: #da3d28 !important;
-      text-transform: uppercase; }
-    .card .card-body .tags-area .text-danger {
-      font-size: 12px; }
+    .card .card-body .tags-area {
+      padding: 10px 0; }
+      .card .card-body .tags-area .text-danger a,
+      .card .card-body .tags-area .text-danger a:hover {
+        color: #da3d28 !important;
+        text-transform: uppercase; }
+      .card .card-body .tags-area .text-danger {
+        font-size: 14px; }
     .card .card-body .card-title {
-      font-size: 18px;
+      font-size: 21px;
       font-weight: bold;
       color: #3C4858; }
       .card .card-body .card-title:hover {
@@ -7125,7 +7127,12 @@ a {
     .card .card-body .card-text {
       font-size: 14px;
       color: #999999;
-      font-weight: lighter; }
+      font-weight: lighter;
+      line-height: 24px; }
+  .card.post-card .card-img-top {
+    max-height: unset; }
+  .card.recent-posts .card-body ul {
+    padding-left: 20px; }
 
 .navbar-transparent {
   background: transparent !important; }
@@ -7217,6 +7224,10 @@ a {
 .btn-round {
   border-radius: 20px; }
 
+.btn-secondary {
+  background-color: #223464;
+  color: #FFFFFF; }
+
 .pagination .page-item .page-link {
   font-size: 12px;
   background: transparent;
@@ -7291,5 +7302,8 @@ a {
       list-style: none;
       margin: 0;
       padding: 0; }
+
+.content {
+  margin-top: 100px; }
 
 /*# sourceMappingURL=main.css.map */

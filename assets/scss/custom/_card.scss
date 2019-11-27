@@ -36,18 +36,20 @@
     padding-bottom: 0;
 
     .tags-area{
+      padding: 10px 0;
+
       .text-danger a,
       .text-danger a:hover{
         color: $brand-state !important;
         text-transform: uppercase;
       }
       .text-danger{
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 
     .card-title{
-      font-size: 18px;
+      font-size: 21px;
       font-weight: bold;
       color: $card-title;
 
@@ -55,11 +57,24 @@
         color: $card-title !important;
       }
     }
-    
+
     .card-text{
       font-size: 14px;
       color: #999999;
       font-weight: lighter;
+      line-height: 24px;
+    }
+  }
+
+  &.post-card{
+    .card-img-top{
+      max-height: unset;
+    }
+  }
+
+  &.recent-posts{
+    .card-body ul{
+      padding-left: 20px;
     }
   }
 }
