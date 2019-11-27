@@ -1,0 +1,63 @@
+.subscribe-area{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  h4{
+    font-size: 24px;
+    color: #3C4858;
+    font-weight: bold;
+  }
+  .subscribe-text{
+    font-size: 18px;
+    color: #3C4858;
+    font-weight: lighter;
+    line-height: 24px;
+  }
+  .subscribe-input{
+
+    .form-group.form-subscribe{
+      position: relative;
+      border-radius: 40px;
+      display: flex;
+      box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
+      padding: 10px;
+      background: #ffffff;
+
+      i{
+        font-size: 20px;
+        padding: 8px;
+      }
+
+      .form-control{
+        font-weight: 400;
+        color: $text-primary;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        font-size: 14px;
+        width: 60%;
+        border-radius: 0;
+        padding: 0;
+      }
+      .btn-submit{
+        position: absolute;
+        right: 12px;
+        border: none;
+        border-radius: 30px;
+        display: block;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 200;
+        background: $brand-state;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.subscribe-image{
+  width: 100%;
+}
