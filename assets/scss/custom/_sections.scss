@@ -1,6 +1,5 @@
 .section-search{
   max-width: 560px;
-  margin-bottom: 100px;
 
   .form-search{
     position: relative;
@@ -53,7 +52,6 @@
   }
 
   .form-group.form-subscribe{
-    max-width: 319px;
     position: relative;
 
     .form-control{
@@ -77,4 +75,7 @@
       transition: all .2s;
     }
   }
+}
+.page-content{
+  margin-top: 100px;
 }

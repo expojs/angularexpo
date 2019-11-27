@@ -7162,8 +7162,7 @@ a {
     font-weight: lighter; }
 
 .section-search {
-  max-width: 560px;
-  margin-bottom: 100px; }
+  max-width: 560px; }
   .section-search .form-search {
     position: relative; }
     .section-search .form-search .form-control-search {
@@ -7205,7 +7204,6 @@ a {
     font-size: 14px;
     font-weight: lighter; }
   .section-header .form-group.form-subscribe {
-    max-width: 319px;
     position: relative; }
     .section-header .form-group.form-subscribe .form-control {
       border-radius: 30px;
@@ -7225,6 +7223,9 @@ a {
       background: #da3d28;
       color: #ffffff;
       transition: all .2s; }
+
+.page-content {
+  margin-top: 100px; }
 
 .btn-round {
   border-radius: 20px; }
