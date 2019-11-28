@@ -54,7 +54,15 @@
     }
 
     .submit-button{
-      padding-top: 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      padding: 10px 24px;
+      text-transform: uppercase;
+      color: $button-default;
+
+      &:hover{
+        color: #ffffff;
+      }
     }
   }
 }

@@ -1,12 +1,14 @@
 {{!< layouts/default}}
 
 <main role="main">
+  <img src="{{asset "/img/illustratio_header.svg"}}" alt="asd" class="image-svg d-lg-block d-none">
+
   <div class="section section-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-8 col-12 text-lg-left text-center text-md-center ml-auto mr-auto">
-          <img alt="Angular Expo" src="{{asset "/img/logo/angular.png"}}" height="60" width="60" style="margin-top: 100px">
-          <h1>{{@site.title}}</h1>
+          <img alt="Angular Expo" src="{{asset "/img/logo/angular.png"}}" height="100" width="100" style="margin-top: 100px">
+          <h1 class="text-title">{{@site.title}}</h1>
           <p class="text-description">{{@site.description}}</p>
           <div class="form-group form-subscribe">
             <input type="text" placeholder="Your email" class="form-control">
@@ -14,7 +16,6 @@
           </div>
         </div>
         <div class="col-lg-8 d-lg-block d-none">
-          <img src="{{asset "/img/illustratio_header.svg"}}" alt="asd" class="image-svg">
         </div>
       </div>
     </div>

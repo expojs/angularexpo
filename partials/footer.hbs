@@ -5,17 +5,17 @@
       <div class="col-lg-4 col-md-6 ml-auto mr-auto d-flex justify-content-center">
         <div class="vuejs-expo">
           <a href="/madewithreact" class="float-buttons ml-auto mr-auto mb-3">
-            <img src="{{asset "img/icon_48.png"}}" alt="angular">
+            <img src="{{asset "img/icon-vue.png"}}" alt="vuejs">
           </a>
-          <a href="/madewithreact">
+          <a href="/madewithreact" class="text-float-buttons">
             Vuejs Expo
           </a>
         </div>
         <div class="made-with-react">
           <a href="/madewithreact" class="float-buttons ml-auto mr-auto mb-3">
-            <img src="{{asset "img/icon_48.png"}}" alt="angular">
+            <img src="{{asset "img/icon-react.png"}}" alt="madewithreact">
           </a>
-          <a href="/madewithreact">
+          <a href="/madewithreact" class="text-float-buttons">
             Made with React
           </a>
         </div>
@@ -23,13 +23,16 @@
     </div>
     <div class="row pt-5 pl-5 pr-5">
       <div class="col-md-3">
-        <h5><b>Angular Expo</b></h5>
-        <p>
+        <div class="d-flex">
+          <img src="{{asset "img/logo/angular.png"}}" alt="angular" class="footer-img">
+          <h5 class="footer-title">Angular Expo</h5>
+        </div>
+        <p class="footer-text">
           Angular Expo is a beautiful showcase of websites, applications and experiments using the Angular JavaScript framework. Angular Expo has over 75+ AngularJS examples, including demos.
         </p>
       </div>
-      <div class="col-md-2">
-        <h5><b>Links</b></h5>
+      <div class="col-md-3">
+        <h5 class="footer-title">Links</h5>
         <ul class="nav flex-column list-unstyled">
           <li class="nav-item"><a target="_blank" href="https://angular.io/">Official Website</a></li>
           <li class="nav-item"><a target="_blank" href="https://angular.io/docs/js/latest/">Official Documentation</a></li>
@@ -38,7 +41,7 @@
         </ul>
       </div>
       <div class="col-md-2">
-        <h5><b>About us</b></h5>
+        <h5 class="footer-title">About us</h5>
         <ul class="nav flex-column list-unstyled">
           <li class="nav-item"><a href="{{@site.url}}/blog/">Blog</a></li>
           <li class="nav-item"><a href="{{@site.url}}/about/">About Us</a></li>
@@ -47,17 +50,15 @@
         </ul>
       </div>
       <div class="col-md-2">
-        <h5><b>More Information</b></h5>
+        <h5 class="footer-title">More Information</h5>
         <ul class="nav flex-column list-unstyled">
           <li class="nav-item"><a href="{{@site.url}}/advertise/">Advertise</a></li>
           <li class="nav-item"><a href="#" onclick="dialog.showModal();return false;">Newsletter</a></li>
-          <li class="nav-item"><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank">Submit link</a></li>
-          <li class="nav-item"><a href="https://twitter.com/AngularExpo" target="_blank">Twitter</a></li>
-          <li class="nav-item"><a href="https://www.facebook.com/AngularExpo" target="_blank">Facebook</a></li>
+          <li class="nav-item"><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank">Submit product</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
-        <h5><b>Special Thanks</b></h5>
+      <div class="col-md-2">
+        <h5 class="footer-title">Special Thanks</h5>
         <ul class="nav flex-column list-unstyled">
           <li class="nav-item"><a href="https://iradesign.io/?ref=angularexpo">IRA Design</a></li>
           <li class="nav-item"><a href="https://www.creative-tim.com/templates/angular?ref=angularexpo">Creative Tim</a></li>
@@ -68,13 +69,16 @@
     <div class="social-area ml-auto mr-auto">
       <ul class="footer-social ml-auto mr-auto justify-content-center">
         <li class="nav-item">
-          <a href="#ceva" class="nav-link"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li class="nav-item">
           <a href="#ceva" class="nav-link"><i class="fa fa-facebook"></i></a>
         </li>
         <li class="nav-item">
-          <a href="#ceva" class="nav-link"><i class="fa fa-instagram"></i></a>
+          <a href="#ceva" class="nav-link"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#ceva" class="nav-link"><i class="fa fa-github"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#ceva" class="nav-link"><i class="fa fa-rss"></i></a>
         </li>
       </ul>
       <p class="text-center">Copyright © 2019 Angular Expo. All Rights Reserved.</p>

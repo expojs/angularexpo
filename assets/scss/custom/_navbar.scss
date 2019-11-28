@@ -5,22 +5,26 @@
   .navbar-brand,
   .navbar-nav .nav-item .nav-link{
     color: $text-primary;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 20px;
   }
   .navbar-brand{
     font-weight: lighter;
     margin-top: 2px;
     img{
       position: relative;
-      top: -2px;
+      top: -3px;
     }
   }
   .nav-social{
     list-style: none;
     .nav-item .btn{
       font-size: 14px;
-      font-weight: lighter;
+      padding: 9px 24px;
+      border: none;
     }
   }
 }

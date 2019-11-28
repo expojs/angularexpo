@@ -7079,10 +7079,10 @@ a {
     color: #223464 !important; }
 
 .image-svg {
-  width: 115%;
+  width: 1100px;
   position: absolute;
-  margin-top: -58px;
-  right: 0;
+  margin-top: -60px;
+  right: -2px;
   z-index: -1; }
 
 .margin-100 {
@@ -7096,7 +7096,10 @@ a {
   box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
   border-radius: 6px; }
   .card.card-static {
-    display: none; }
+    display: none;
+    min-height: 515px; }
+  .card.card-post {
+    min-height: 515px; }
   .card .card-header {
     background-color: transparent;
     border-bottom: none;
@@ -7107,9 +7110,17 @@ a {
       box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1); }
   .card .card-footer {
     background-color: transparent;
-    border-top: none; }
+    border-top: none;
+    position: absolute;
+    bottom: 0; }
     .card .card-footer .btn-outline-danger:hover {
       color: #ffffff !important; }
+    .card .card-footer .btn-outline-danger {
+      border-radius: 30px;
+      font-size: 14px;
+      padding: 10px 24px;
+      text-transform: uppercase;
+      color: #F44336; }
   .card .card-body {
     padding-top: 0;
     padding-bottom: 0; }
@@ -7117,7 +7128,7 @@ a {
       padding: 10px 0; }
       .card .card-body .tags-area .text-danger a,
       .card .card-body .tags-area .text-danger a:hover {
-        color: #da3d28 !important;
+        color: #EC250D !important;
         text-transform: uppercase; }
       .card .card-body .tags-area .text-danger {
         font-size: 14px; }
@@ -7145,53 +7156,55 @@ a {
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-item .nav-link {
   color: #223464;
-  font-size: 14px;
-  font-weight: 400; }
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 20px; }
 
 .navbar .navbar-brand {
   font-weight: lighter;
   margin-top: 2px; }
   .navbar .navbar-brand img {
     position: relative;
-    top: -2px; }
+    top: -3px; }
 
 .navbar .nav-social {
   list-style: none; }
   .navbar .nav-social .nav-item .btn {
     font-size: 14px;
-    font-weight: lighter; }
+    padding: 9px 24px;
+    border: none; }
 
 .section-search {
   max-width: 560px; }
   .section-search .form-search {
     position: relative; }
     .section-search .form-search .form-control-search {
-      border-radius: 30px;
+      border-radius: 65px;
       box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
       border: none;
       color: #223464;
       display: block;
       font-size: 14px;
       font-weight: 300;
-      height: 50px;
+      height: 60px;
       line-height: 1.42857;
-      padding: 6px 25px;
-      vertical-align: middle;
-      transition: background-color .2s; }
+      padding: 6px 36px;
+      vertical-align: middle; }
     .section-search .form-search .btn-submit {
       position: absolute;
-      right: 10px;
+      right: 9px;
       border: none;
-      padding: 10px 12px;
+      padding: 15px 16px;
       border-radius: 25px;
-      height: 36px;
+      height: 46px;
       line-height: 30px;
-      width: 36px;
+      width: 46px;
       display: block;
       top: 7px;
-      background: #da3d28;
-      color: #ffffff;
-      transition: all .2s; }
+      background: #EC250D;
+      color: #ffffff; }
       .section-search .form-search .btn-submit .icon-search {
         font-size: 18px;
         position: relative;
@@ -7201,8 +7214,14 @@ a {
 .section-header {
   margin-bottom: 150px; }
   .section-header .text-description {
-    font-size: 14px;
-    font-weight: lighter; }
+    font-size: 18px;
+    font-weight: lighter;
+    color: #223464;
+    margin-bottom: 24px; }
+  .section-header .text-title {
+    margin: 20px 0;
+    font-size: 50px;
+    color: #223464; }
   .section-header .form-group.form-subscribe {
     position: relative; }
     .section-header .form-group.form-subscribe .form-control {
@@ -7210,19 +7229,22 @@ a {
       border: 1px solid #223464;
       color: #223464;
       display: block;
+      padding: 23px;
       font-weight: 400;
-      font-size: 14px; }
+      font-size: 14px;
+      background-color: #F8F8FF; }
     .section-header .form-group.form-subscribe .btn-submit {
       position: absolute;
-      right: 4px;
+      right: 10px;
       border: none;
       border-radius: 30px;
       display: block;
       font-weight: 200;
-      top: 3px;
-      background: #da3d28;
-      color: #ffffff;
-      transition: all .2s; }
+      font-size: 13px;
+      padding: 6px 20px;
+      top: 9px;
+      background: #EC250D;
+      color: #ffffff; }
 
 .page-content {
   margin-top: 100px; }
@@ -7233,6 +7255,15 @@ a {
 .btn-secondary {
   background-color: #223464;
   color: #FFFFFF; }
+
+.btn-danger, .btn-submit {
+  background-image: linear-gradient(120deg, #FD5D93 0%, #EC250D 100%) !important; }
+
+.btn-outline-danger:hover {
+  background-image: linear-gradient(120deg, #FD5D93 0%, #EC250D 100%) !important; }
+
+.fa-github, .fa-twitter {
+  font-size: 21px !important; }
 
 .pagination .page-item .page-link {
   font-size: 12px;
@@ -7278,11 +7309,17 @@ a {
     .card-subscribe .card-body .form-input .text-input:focus, .card-subscribe .card-body .form-input .text-input:active, .card-subscribe .card-body .form-input .text-input:hover {
       outline: none; }
   .card-subscribe .card-body .submit-button {
-    padding-top: 20px; }
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    color: #F44336; }
+    .card-subscribe .card-body .submit-button:hover {
+      color: #ffffff; }
 
 .footer {
   background-color: #FCFCFF;
-  padding-top: 15px; }
+  padding-top: 45px; }
   .footer .made-with-react, .footer .vuejs-expo {
     /* To correctly align image, regardless of content height: */
     vertical-align: top;
@@ -7290,7 +7327,7 @@ a {
     /* To horizontally center images and caption */
     text-align: center;
     /* The width of the container also implies margin around the images. */
-    width: 120px; }
+    width: 140px; }
     .footer .made-with-react .float-buttons, .footer .vuejs-expo .float-buttons {
       display: block;
       background-color: #fff;
@@ -7299,7 +7336,21 @@ a {
       height: 80px;
       width: 80px; }
       .footer .made-with-react .float-buttons img, .footer .vuejs-expo .float-buttons img {
-        padding: 17px; }
+        width: 65px;
+        margin-top: 7px; }
+    .footer .made-with-react .text-float-buttons, .footer .vuejs-expo .text-float-buttons {
+      font-weight: bold;
+      font-size: 18px; }
+  .footer .footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #223464; }
+  .footer .footer-text {
+    color: #223464; }
+  .footer .footer-img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px; }
   .footer .social-area {
     max-width: 400px;
     display: block; }
@@ -7308,6 +7359,14 @@ a {
       list-style: none;
       margin: 0;
       padding: 0; }
+    .footer .social-area p {
+      color: #223464;
+      font-weight: lighter; }
+  .footer .nav .nav-item {
+    padding: 4px 0; }
+    .footer .nav .nav-item a {
+      text-transform: uppercase;
+      color: #223464; }
 
 .content {
   margin-top: 100px; }
@@ -7357,7 +7416,7 @@ a {
       padding-top: 8px;
       padding-bottom: 8px;
       font-weight: 200;
-      background: #da3d28;
+      background: #EC250D;
       color: #ffffff; }
 
 .subscribe-image {

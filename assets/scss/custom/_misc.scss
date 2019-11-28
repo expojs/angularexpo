@@ -1,5 +1,5 @@
 body{
-  background-color: $body-background-color;
+  background-color: $background-color;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
@@ -17,10 +17,10 @@ a{
 }
 
 .image-svg{
-  width: 115%;
+  width: 1100px;
   position: absolute;
-  margin-top: -58px;
-  right: 0;
+  margin-top: -60px;
+  right: -2px;
   z-index: -1;
 }
 .margin-100{
