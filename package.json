@@ -8,6 +8,7 @@
     "ghost-api": "v3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "bootstrap": "4.3.1",
     "del": "5.1.0",
     "fs": "0.0.1-security",

@@ -4,6 +4,7 @@
 
 <main role="main">
   <div class="page-content">
+    <img src="{{asset "img/bg_header.svg"}}" alt="background header" class="background-header">
     <div class="container">
       <div class="row d-flex">
         <div class="col-md-8">
@@ -38,10 +39,10 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-6">
-
                   <div class="card recent-posts">
-                    <div class="card-header">
-                      <h2 class="card-title">Recent posts</h2>
+                    <div class="card-header d-flex">
+                      <i class="far fa-file-alt"></i>
+                      <h5>Recent posts</h5>
                     </div>
                     <div class="card-body">
                       {{#get "posts" limit="5" as |recents|}}
@@ -57,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-12 ml-auto">
+        <div class="col-md-4 col-sm-12 ml-auto">
           {{> sidebar0}}
         </div>
       </div>
@@ -65,6 +66,7 @@
         {{> subscribe-area}}
       </div>
     </div>
+    <img src="{{asset "img/bg.svg"}}" alt="background" class="post-page-background">
   </div>
 </main>
 

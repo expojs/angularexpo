@@ -26,3 +26,13 @@ a{
 .margin-100{
   margin: 100px 0;
 }
+.post-page-background{
+  position: absolute;
+  margin-top: -510px;
+  z-index: -1;
+}
+.background-header{
+  position: absolute;
+  z-index: -1;
+  top: -65px;
+}

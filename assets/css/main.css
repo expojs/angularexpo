@@ -7066,7 +7066,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto; }
 
 body {
-  background-color: #F8F8FF;
+  background-color: #F5F5FC;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.428571429; }
@@ -7087,6 +7087,16 @@ a {
 
 .margin-100 {
   margin: 100px 0; }
+
+.post-page-background {
+  position: absolute;
+  margin-top: -510px;
+  z-index: -1; }
+
+.background-header {
+  position: absolute;
+  z-index: -1;
+  top: -65px; }
 
 .card {
   width: 100%;
@@ -7110,9 +7120,7 @@ a {
       box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1); }
   .card .card-footer {
     background-color: transparent;
-    border-top: none;
-    position: absolute;
-    bottom: 0; }
+    border-top: none; }
     .card .card-footer .btn-outline-danger:hover {
       color: #ffffff !important; }
     .card .card-footer .btn-outline-danger {
@@ -7147,8 +7155,21 @@ a {
     max-height: unset; }
   .card.post-card .btn {
     font-weight: 200; }
+  .card.recent-posts .card-header {
+    padding-bottom: 0; }
+    .card.recent-posts .card-header i {
+      font-size: 18px;
+      margin-right: 10px;
+      margin-top: 3px;
+      color: #223464; }
+    .card.recent-posts .card-header h5 {
+      color: #223464; }
   .card.recent-posts .card-body ul {
     padding-left: 20px; }
+    .card.recent-posts .card-body ul li {
+      margin-bottom: 4px; }
+      .card.recent-posts .card-body ul li a {
+        font-weight: bold; }
 
 .navbar-transparent {
   background: transparent !important; }
@@ -7232,7 +7253,7 @@ a {
       padding: 23px;
       font-weight: 400;
       font-size: 14px;
-      background-color: #F8F8FF; }
+      background-color: #F5F5FC; }
     .section-header .form-group.form-subscribe .btn-submit {
       position: absolute;
       right: 10px;
@@ -7266,18 +7287,25 @@ a {
   font-size: 21px !important; }
 
 .pagination .page-item .page-link {
-  font-size: 12px;
+  font-size: 14px;
   background: transparent;
   color: #223464;
   border: none; }
 
 .pagination .page-number {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #223464; }
 
+.card-tags .card-header i {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 3px;
+  color: #223464; }
+
 .card-tags .card-header h5 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #223464; }
 
 .card-tags .card-body .tags-menu {
   list-style: none;
@@ -7290,12 +7318,24 @@ a {
       margin: 0;
       margin-left: auto;
       right: 10px;
-      position: relative; }
+      position: relative;
+      color: #223464; }
     .card-tags .card-body .tags-menu li a {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #223464; }
+
+.card-subscribe .card-header i {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 3px;
+  color: #223464; }
+
+.card-subscribe .card-header h5 {
+  color: #223464; }
 
 .card-subscribe p {
-  font-weight: lighter; }
+  font-weight: lighter;
+  color: #223464; }
 
 .card-subscribe .card-body {
   padding-bottom: 30px; }
@@ -7316,6 +7356,11 @@ a {
     color: #F44336; }
     .card-subscribe .card-body .submit-button:hover {
       color: #ffffff; }
+  .card-subscribe .card-body .clear {
+    margin-top: 30px; }
+
+.sidebar-page .card {
+  align-items: center; }
 
 .footer {
   background-color: #FCFCFF;
@@ -7380,11 +7425,13 @@ a {
   .subscribe-area h4 {
     font-size: 24px;
     color: #3C4858;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-left: 10px; }
   .subscribe-area .subscribe-text {
     font-size: 18px;
     color: #3C4858;
     font-weight: lighter;
+    margin-left: 10px;
     line-height: 24px; }
   .subscribe-area .subscribe-input .form-group.form-subscribe {
     position: relative;

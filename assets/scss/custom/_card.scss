@@ -30,8 +30,6 @@
   .card-footer{
     background-color: transparent;
     border-top: none;
-    position: absolute;
-    bottom: 0;
 
     .btn-outline-danger:hover{
       color: #ffffff !important;
@@ -91,8 +89,30 @@
   }
 
   &.recent-posts{
+
+    .card-header{
+      padding-bottom: 0;
+      i{
+        font-size: 18px;
+        margin-right: 10px;
+        margin-top: 3px;
+        color: $text-primary;
+      }
+      h5{
+        color: $text-primary;
+      }
+    }
+
     .card-body ul{
       padding-left: 20px;
+      
+      li{
+        margin-bottom: 4px;
+
+        a{
+          font-weight: bold;
+        }
+      }
     }
   }
 }
