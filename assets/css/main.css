@@ -7275,13 +7275,28 @@ a {
 
 .btn-secondary {
   background-color: #223464;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 24px;
+  text-transform: uppercase; }
+  .btn-secondary:hover {
+    background-color: #223464;
+    color: #FFFFFF !important; }
 
 .btn-danger, .btn-submit {
   background-image: linear-gradient(120deg, #FD5D93 0%, #EC250D 100%) !important; }
 
 .btn-outline-danger:hover {
   background-image: linear-gradient(120deg, #FD5D93 0%, #EC250D 100%) !important; }
+
+.btn-danger {
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 24px;
+  text-transform: uppercase; }
+  .btn-danger:hover {
+    color: #ffffff !important; }
 
 .fa-github, .fa-twitter {
   font-size: 21px !important; }

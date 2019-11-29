@@ -5,6 +5,15 @@
 .btn-secondary{
   background-color: #223464;
   color: #FFFFFF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 24px;
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: #223464;
+    color: #FFFFFF !important;
+  }
 }
 
 .btn-danger, .btn-submit{
@@ -12,6 +21,17 @@
 }
 .btn-outline-danger:hover{
   background-image: linear-gradient(120deg, $brand 0%, $brand-state 100%) !important;
+}
+
+.btn-danger{
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 24px;
+  text-transform: uppercase;
+  
+  &:hover{
+    color: #ffffff !important;
+  }
 }
 
 .fa-github, .fa-twitter{
