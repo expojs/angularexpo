@@ -7050,7 +7050,10 @@ a.text-dark:hover, a.text-dark:focus {
       display: block;
       color: #777; }
     .code-fund .cf-wrapper .cf-media-body {
-      align-self: center; }
+      align-self: center;
+      margin-left: 10px; }
+    .code-fund .cf-wrapper .cf-impression {
+      display: none; }
   .code-fund img {
     width: 100px;
     height: 100px;
