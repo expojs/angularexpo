@@ -7213,6 +7213,11 @@ a {
   .navbar-toggler {
     display: none; } }
 
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: relative;
+    left: 33px; } }
+
 .section-search {
   max-width: 560px; }
   .section-search .form-search {
