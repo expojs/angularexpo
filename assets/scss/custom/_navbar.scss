@@ -27,4 +27,22 @@
       border: none;
     }
   }
+
+  .navbar-toggler{
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: .25rem .75rem;
+    border: .0625rem solid transparent;
+    border-radius: .25rem;
+    background-color: transparent;
+    color: $text-primary;
+  }
+  .navbar-toggler-icon {
+    color: $text-primary;
+  }
+}
+@media (min-width: 992px){
+  .navbar-toggler {
+      display: none;
+  }
 }
