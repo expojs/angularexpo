@@ -7115,7 +7115,8 @@ a {
       bottom: 0;
       position: absolute; }
   .card.card-post {
-    min-height: 515px; }
+    min-height: 515px;
+    height: auto; }
   .card .card-header {
     background-color: transparent;
     border-bottom: none;
