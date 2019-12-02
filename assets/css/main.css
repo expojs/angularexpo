@@ -7110,7 +7110,10 @@ a {
   border-radius: 6px; }
   .card.card-static {
     display: none;
-    min-height: 515px; }
+    min-height: 535px; }
+    .card.card-static .card-footer {
+      bottom: 0;
+      position: absolute; }
   .card.card-post {
     min-height: 515px; }
   .card .card-header {

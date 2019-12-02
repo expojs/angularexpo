@@ -8,7 +8,12 @@
 
   &.card-static{
     display: none;
-    min-height: 515px;
+    min-height: 535px;
+
+    .card-footer{
+      bottom: 0;
+      position: absolute;
+    }
   }
 
   &.card-post{
@@ -105,7 +110,7 @@
 
     .card-body ul{
       padding-left: 20px;
-      
+
       li{
         margin-bottom: 4px;
 
