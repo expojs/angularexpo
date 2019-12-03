@@ -3,7 +3,7 @@
   overflow: hidden;
   margin-bottom: 30px;
   border: none;
-  box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
+  box-shadow: $shadow-default;
   border-radius: 6px;
 
   &.card-static{
@@ -41,7 +41,7 @@
     .card-img-top{
       max-height: 276px;
       border-radius: 6px;
-      box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
+      box-shadow: $shadow-default;
     }
   }
 
