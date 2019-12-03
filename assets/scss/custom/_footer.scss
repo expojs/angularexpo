@@ -71,3 +71,15 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .footer{
+    .responsive-footer{
+      div{
+        text-align: center;
+        div.d-flex{
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -7462,6 +7462,12 @@ a {
       text-transform: uppercase;
       color: #223464; }
 
+@media (max-width: 576px) {
+  .footer .responsive-footer div {
+    text-align: center; }
+    .footer .responsive-footer div div.d-flex {
+      justify-content: center; } }
+
 .content {
   margin-top: 100px; }
 
