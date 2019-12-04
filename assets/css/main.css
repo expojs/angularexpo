@@ -7281,13 +7281,15 @@ a {
     position: relative; }
     .section-header .form-group.form-subscribe .form-control {
       border-radius: 30px;
-      border: 1px solid #223464;
+      border: 1px solid #d7d7d7;
       color: #223464;
       display: block;
       padding: 23px;
       font-weight: 400;
       font-size: 14px;
       background-color: #F5F5FC; }
+      .section-header .form-group.form-subscribe .form-control:active {
+        border: 1px solid #223464; }
     .section-header .form-group.form-subscribe .btn-submit {
       position: absolute;
       right: 10px;
