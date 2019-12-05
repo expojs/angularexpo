@@ -7110,13 +7110,22 @@ a {
   border-radius: 6px; }
   .card.card-static {
     display: none;
-    min-height: 535px; }
+    height: 550px; }
+    .card.card-static .card-header-url {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1); }
+      .card.card-static .card-header-url .card-img-top {
+        width: unset;
+        height: 232px;
+        border-radius: 6px; }
     .card.card-static .card-footer {
       bottom: 0;
       position: absolute; }
   .card.card-post {
-    min-height: 515px;
-    height: auto; }
+    height: 550px; }
   .card.card-page .card-header .card-title {
     font-size: 34px;
     font-weight: bold;
@@ -7127,10 +7136,16 @@ a {
     background-color: transparent;
     border-bottom: none;
     padding: 20px; }
-    .card .card-header .card-img-top {
-      max-height: 276px;
+    .card .card-header .card-header-url {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
       border-radius: 6px;
       box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1); }
+      .card .card-header .card-header-url .card-img-top {
+        width: unset;
+        height: 232px;
+        border-radius: 6px; }
   .card .card-footer {
     background-color: transparent;
     border-top: none; }
@@ -7157,9 +7172,11 @@ a {
       font-weight: lighter;
       line-height: 24px; }
   .card.post-card .card-img-top {
-    max-height: unset; }
+    height: unset; }
   .card.post-card .btn {
     font-weight: 200; }
+  .card.post-card .card-body .container p {
+    color: #999999; }
   .card.recent-posts .card-header {
     padding-bottom: 0; }
     .card.recent-posts .card-header i {
@@ -7177,42 +7194,40 @@ a {
         font-weight: bold; }
 
 .navbar-transparent {
-  background: transparent !important; }
+  background: transparent; }
 
-.navbar .navbar-brand,
-.navbar .navbar-nav .nav-item .nav-link {
-  color: #223464;
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 20px; }
-
-.navbar .navbar-brand {
-  font-weight: lighter;
-  margin-top: 2px; }
-  .navbar .navbar-brand img {
-    position: relative;
-    top: -3px; }
-
-.navbar .nav-social {
-  list-style: none; }
-  .navbar .nav-social .nav-item .btn {
-    font-size: 14px;
-    padding: 9px 24px;
-    border: none; }
-
-.navbar .navbar-toggler {
-  font-size: 1.25rem;
-  line-height: 1;
-  padding: .25rem .75rem;
-  border: .0625rem solid transparent;
-  border-radius: .25rem;
-  background-color: transparent;
-  color: #223464; }
-
-.navbar .navbar-toggler-icon {
-  color: #223464; }
+.navbar {
+  transition: all .3s ease 0s; }
+  .navbar .navbar-brand,
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #223464;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 20px; }
+  .navbar .navbar-brand {
+    font-weight: lighter;
+    margin-top: 2px; }
+    .navbar .navbar-brand img {
+      position: relative;
+      top: -3px; }
+  .navbar .nav-social {
+    list-style: none; }
+    .navbar .nav-social .nav-item .btn {
+      font-size: 14px;
+      padding: 9px 24px;
+      border: none; }
+  .navbar .navbar-toggler {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: .25rem .75rem;
+    border: .0625rem solid transparent;
+    border-radius: .25rem;
+    background-color: transparent;
+    color: #223464; }
+  .navbar .navbar-toggler-icon {
+    color: #223464; }
 
 @media (min-width: 992px) {
   .navbar-toggler {
@@ -7259,10 +7274,11 @@ a {
         right: 1px; }
   .section-search #my-custom-results {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 6px;
     width: auto;
     max-width: 250px;
     margin-top: 10px;
+    box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
     position: absolute;
     z-index: 1050;
     transform: translate3d(0, 1px, 0) !important; }
@@ -7270,6 +7286,8 @@ a {
       padding: 0 20px; }
       .section-search #my-custom-results .search-menu-tags:not(:first-child), .section-search #my-custom-results .search-menu-tags:not(:last-child) {
         margin-bottom: 5px; }
+      .section-search #my-custom-results .search-menu-tags .search-item {
+        text-transform: capitalize; }
     .section-search #my-custom-results .search-menu-tags:first-child {
       padding-top: 20px; }
     .section-search #my-custom-results .search-menu-tags:last-child {

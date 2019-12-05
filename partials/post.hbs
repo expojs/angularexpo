@@ -1,7 +1,7 @@
 
 <div class="card card-post">
   <div class="card-header">
-    <a href="{{ url }}">
+    <a href="{{ url }}" class="card-header-url">
       <img src="{{feature_image}}" alt="" class="card-img-top">
     </a>
   </div>
@@ -9,7 +9,10 @@
     <div class="tags-area">
       <span href="{{url}}" class="text-danger">
         <b>
-          {{tags}}
+          {{#primary_tag}}
+          <a href="{{url}}">{{name}}</a>
+          {{/primary_tag}}
+
         </b>
       </span>
     </div>

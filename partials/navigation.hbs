@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-transparent navbar-light">
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-light fixed-top" id="nav">
   <div class="container">
     <a class="navbar-brand" href="{{@site.url}}">
       <img alt="Angular Expo" src="{{asset "/img/logo/angular.png"}}" height="30" width="30">
@@ -36,3 +36,15 @@
     </div>
   </div>
 </nav>
+<script type="text/javascript">
+  var nav;
+  function yScroll(){
+    nav = $('#nav');
+    yPos = window.pageYOffset;
+    nav.removeClass("bg-light");
+    if(yPos > 150){
+        nav.addClass("bg-light");
+    }
+  }
+  window.addEventListener("scroll", yScroll);
+</script>

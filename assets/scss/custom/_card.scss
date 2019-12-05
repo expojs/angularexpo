@@ -8,7 +8,22 @@
 
   &.card-static{
     display: none;
-    min-height: 535px;
+    height: 550px;
+
+    .card-header-url{
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: $shadow-default;
+
+
+      .card-img-top{
+        width: unset;
+        height: 232px;
+        border-radius: 6px;
+      }
+    }
 
     .card-footer{
       bottom: 0;
@@ -17,8 +32,7 @@
   }
 
   &.card-post{
-    min-height: 515px;
-    height: auto;
+    height: 550px;
   }
 
   &.card-page{
@@ -38,11 +52,21 @@
     border-bottom: none;
     padding: 20px;
 
-    .card-img-top{
-      max-height: 276px;
+    .card-header-url{
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
       border-radius: 6px;
       box-shadow: $shadow-default;
+
+
+      .card-img-top{
+        width: unset;
+        height: 232px;
+        border-radius: 6px;
+      }
     }
+
   }
 
   .card-footer{
@@ -87,10 +111,15 @@
 
   &.post-card{
     .card-img-top{
-      max-height: unset;
+      height: unset;
     }
     .btn{
       font-weight: 200;
+    }
+    .card-body .container{
+      p{
+        color: #999999;
+      }
     }
   }
 

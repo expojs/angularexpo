@@ -1,7 +1,9 @@
 .navbar-transparent{
-  background: transparent !important;
+  background: transparent;
 }
 .navbar{
+  transition: all .3s ease 0s;
+  
   .navbar-brand,
   .navbar-nav .nav-item .nav-link{
     color: $text-primary;

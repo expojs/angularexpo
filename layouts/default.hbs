@@ -67,7 +67,7 @@
         template: function(result) {
             let url = [location.protocol, '//', location.host].join('') + '/tag';
             return `<div class="search-menu-tags">
-            <a href="` + url + `/` + result.slug + `/">` + result.name + `</a>
+            <a class="search-item" href="` + url + `/` + result.slug + `/">` + result.name + `</a>
             </div>`;
         }
     })

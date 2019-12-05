@@ -43,10 +43,11 @@
 
   #my-custom-results{
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 6px;
     width: auto;
     max-width: 250px;
     margin-top: 10px;
+    box-shadow: $shadow-default;
     position: absolute;
     z-index: 1050;
     transform: translate3d(0,1px,0)!important;
@@ -56,6 +57,9 @@
       &:not(:first-child),
       &:not(:last-child){
           margin-bottom: 5px;
+      }
+      .search-item{
+        text-transform: capitalize;
       }
     }
     .search-menu-tags:first-child{
