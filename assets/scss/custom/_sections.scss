@@ -40,6 +40,31 @@
       }
     }
   }
+
+  #my-custom-results{
+    background-color: #fff;
+    border-radius: 20px;
+    width: auto;
+    max-width: 250px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1050;
+    transform: translate3d(0,1px,0)!important;
+
+    .search-menu-tags{
+      padding: 0 20px;
+      &:not(:first-child),
+      &:not(:last-child){
+          margin-bottom: 5px;
+      }
+    }
+    .search-menu-tags:first-child{
+      padding-top: 20px;
+    }
+    .search-menu-tags:last-child{
+      padding-bottom: 20px;
+    }
+  }
 }
 .section-header{
   margin-bottom: 150px;

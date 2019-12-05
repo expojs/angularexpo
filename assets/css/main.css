@@ -7257,6 +7257,23 @@ a {
         position: relative;
         top: -7px;
         right: 1px; }
+  .section-search #my-custom-results {
+    background-color: #fff;
+    border-radius: 20px;
+    width: auto;
+    max-width: 250px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1050;
+    transform: translate3d(0, 1px, 0) !important; }
+    .section-search #my-custom-results .search-menu-tags {
+      padding: 0 20px; }
+      .section-search #my-custom-results .search-menu-tags:not(:first-child), .section-search #my-custom-results .search-menu-tags:not(:last-child) {
+        margin-bottom: 5px; }
+    .section-search #my-custom-results .search-menu-tags:first-child {
+      padding-top: 20px; }
+    .section-search #my-custom-results .search-menu-tags:last-child {
+      padding-bottom: 20px; }
 
 .section-header {
   margin-bottom: 150px; }
