@@ -99,6 +99,8 @@
       font-size: 14px;
       background-color: $background-color;
 
+      &:focus {box-shadow: none;
+      border: 1px solid $text-primary;}
       &:active{
         border: 1px solid $text-primary;
       }

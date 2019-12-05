@@ -7054,12 +7054,12 @@ a.text-dark:hover, a.text-dark:focus {
       margin-left: 10px; }
     .code-fund .cf-wrapper .cf-impression {
       display: none; }
-  .code-fund img {
-    width: 100px;
+  .code-fund .cf-img {
+    width: 100px !important;
     height: 100px;
     margin-top: 0 !important;
     margin-bottom: 8px; }
-    .code-fund img[data-src="impression_url"] {
+    .code-fund .cf-img[data-src="impression_url"] {
       position: fixed;
       left: -1000px;
       top: -1000px; }
@@ -7085,7 +7085,7 @@ a {
   width: 1100px;
   position: absolute;
   margin-top: -60px;
-  right: -2px;
+  right: 0;
   z-index: -1; }
 
 .margin-100 {
@@ -7100,6 +7100,10 @@ a {
   position: absolute;
   z-index: -1;
   top: -65px; }
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none; }
 
 .card {
   width: 100%;
@@ -7210,7 +7214,7 @@ a {
     margin-right: 20px; }
   .navbar .navbar-brand {
     font-weight: lighter;
-    margin-top: 2px; }
+    margin-bottom: -3px; }
     .navbar .navbar-brand img {
       position: relative;
       top: -3px; }
@@ -7317,6 +7321,9 @@ a {
       font-weight: 400;
       font-size: 14px;
       background-color: #F5F5FC; }
+      .section-header .form-group.form-subscribe .form-control:focus {
+        box-shadow: none;
+        border: 1px solid #223464; }
       .section-header .form-group.form-subscribe .form-control:active {
         border: 1px solid #223464; }
     .section-header .form-group.form-subscribe .btn-submit {
@@ -7484,10 +7491,11 @@ a {
   .footer .footer-img {
     width: 20px;
     height: 20px;
-    margin: 0 10px; }
+    margin: 0; }
   .footer .social-area {
     max-width: 400px;
-    display: block; }
+    display: block;
+    padding-bottom: 16px; }
     .footer .social-area .footer-social {
       display: flex;
       list-style: none;
@@ -7495,12 +7503,11 @@ a {
       padding: 0; }
     .footer .social-area p {
       color: #223464;
-      font-weight: lighter; }
-  .footer .nav .nav-item {
-    padding: 4px 0; }
-    .footer .nav .nav-item a {
-      text-transform: uppercase;
-      color: #223464; }
+      font-weight: lighter;
+      margin: 0; }
+  .footer .nav .nav-item a {
+    text-transform: capitalize;
+    color: #223464; }
 
 @media (max-width: 576px) {
   .footer .responsive-footer div {
@@ -7510,6 +7517,9 @@ a {
 
 .content {
   margin-top: 100px; }
+
+.page-content img {
+  width: 100%; }
 
 .subscribe-area {
   position: relative;

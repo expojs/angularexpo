@@ -42,12 +42,13 @@
   .footer-img{
     width: 20px;
     height: 20px;
-    margin: 0 10px;
+    margin: 0;
   }
 
   .social-area{
     max-width: 400px;
     display: block;
+    padding-bottom: 16px;
 
     .footer-social{
       display: flex;
@@ -58,14 +59,14 @@
     p{
       color: $text-primary;
       font-weight: lighter;
+      margin: 0;
     }
   }
 
   .nav {
     .nav-item {
-      padding: 4px 0;
       a{
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: $text-primary;
       }
     }
