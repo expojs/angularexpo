@@ -28,7 +28,7 @@
   font-size: 14px;
   padding: 10px 24px;
   text-transform: uppercase;
-  
+
   &:hover{
     color: #ffffff !important;
   }
@@ -36,4 +36,16 @@
 
 .fa-github, .fa-twitter{
   font-size: 21px !important;
+}
+
+.btn-outline-danger{
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 24px;
+  text-transform: uppercase;
+  color: $button-default;
+
+  &:hover{
+    color: #ffffff !important;
+  }
 }

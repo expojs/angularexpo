@@ -48,18 +48,6 @@
   .card-footer{
     background-color: transparent;
     border-top: none;
-
-    .btn-outline-danger:hover{
-      color: #ffffff !important;
-    }
-
-    .btn-outline-danger{
-      border-radius: 30px;
-      font-size: 14px;
-      padding: 10px 24px;
-      text-transform: uppercase;
-      color: $button-default;
-    }
   }
 
   .card-body{
