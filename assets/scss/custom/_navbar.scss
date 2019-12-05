@@ -3,7 +3,11 @@
 }
 .navbar{
   transition: all .3s ease 0s;
-  
+
+  &.bg-white{
+    box-shadow: $shadow-navbar;
+  }
+
   .navbar-brand,
   .navbar-nav .nav-item .nav-link{
     color: $text-primary;

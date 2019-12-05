@@ -7198,6 +7198,8 @@ a {
 
 .navbar {
   transition: all .3s ease 0s; }
+  .navbar.bg-white {
+    box-shadow: 0 15px 30px 0 rgba(60, 72, 88, 0.05); }
   .navbar .navbar-brand,
   .navbar .navbar-nav .nav-item .nav-link {
     color: #223464;
