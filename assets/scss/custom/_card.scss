@@ -4,7 +4,7 @@
   margin-bottom: 30px;
   border: none;
   box-shadow: $shadow-default;
-  border-radius: 6px;
+  border-radius: $border-radious-default;
 
   &.card-static{
     display: none;
@@ -14,14 +14,14 @@
       display: flex;
       justify-content: center;
       overflow: hidden;
-      border-radius: 6px;
+      border-radius: $border-radious-default;
       box-shadow: $shadow-default;
 
 
       .card-img-top{
         width: unset;
         height: 232px;
-        border-radius: 6px;
+        border-radius: $border-radious-default;
       }
     }
 
@@ -56,14 +56,14 @@
       display: flex;
       justify-content: center;
       overflow: hidden;
-      border-radius: 6px;
+      border-radius: $border-radious-default;
       box-shadow: $shadow-default;
 
 
       .card-img-top{
         width: unset;
         height: 232px;
-        border-radius: 6px;
+        border-radius: $border-radious-default;
       }
     }
 
