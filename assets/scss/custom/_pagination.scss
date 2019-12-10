@@ -1,12 +1,12 @@
 .pagination{
   .page-item .page-link{
-    font-size: 14px;
+    font-size: $font-size-default;;
     background: transparent;
     color: $text-primary;
     border: none;
   }
   .page-number{
-    font-size: 14px;
+    font-size: $font-size-default;;
     text-transform: uppercase;
     color: $text-primary;
   }

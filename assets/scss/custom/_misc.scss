@@ -1,7 +1,7 @@
 body{
   background-color: $background-color;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: $font-size-default;;
   line-height: 1.428571429;
 }
 a{

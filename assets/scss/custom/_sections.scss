@@ -10,7 +10,7 @@
       border: none;
       color: $text-primary;
       display: block;
-      font-size: 14px;
+      font-size: $font-size-default;;
       font-weight: 300;
       height: 60px;
       line-height: 1.42857;
@@ -96,7 +96,7 @@
       display: block;
       padding: 23px;
       font-weight: 400;
-      font-size: 14px;
+      font-size: $font-size-default;;
       background-color: $background-color;
 
       &:focus {box-shadow: none;

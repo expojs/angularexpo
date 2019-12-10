@@ -67,7 +67,7 @@
         outline: 0;
         border-bottom: 1px solid #D8D8D8;
         color: #999999;
-        font-size: 14px;
+        font-size: $font-size-default;;
 
         &:focus,&:active,&:hover{
           outline: none;
@@ -77,7 +77,7 @@
     }
     .submit-button{
       border-radius: 30px;
-      font-size: 14px;
+      font-size: $font-size-default;;
       padding: 10px 24px;
       text-transform: uppercase;
       color: $button-default;
