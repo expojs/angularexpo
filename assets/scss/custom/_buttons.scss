@@ -3,7 +3,7 @@
 }
 
 .btn-secondary{
-  background-color: #223464;
+  background-color: $text-primary;
   color: $white-color;
   border-radius: $button-border-radious;
   font-size: $font-size-default;;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
 
   &:hover{
-    background-color: #223464;
+    background-color: $text-primary;
     color: $white-color !important;
   }
 }

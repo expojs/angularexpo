@@ -8,7 +8,7 @@
 
   &.card-static{
     display: none;
-    height: 550px;
+    height: $card-height;
 
     .card-header-url{
       display: flex;
@@ -32,7 +32,7 @@
   }
 
   &.card-post{
-    height: 550px;
+    height: $card-height;
   }
 
   &.card-page{
