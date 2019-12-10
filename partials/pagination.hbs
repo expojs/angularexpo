@@ -1,15 +1,18 @@
-<div class="mdl-grid fixed-width">
-  <nav class="mdl-paging" role="navigation">
+
+
+<nav aria-label="...">
+  <ul class="pagination justify-content-center align-items-center">
+    <li class="page-item">
       {{#if prev}}
-        <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon" href="{{page_url prev}}">
-          <i class="icon-angle-left"></i>
-        </a>
+        <a class="page-link" href="{{page_url prev}}"><i class="fas fa-chevron-left"></i></a>
       {{/if}}
-      <span class="mdl-paging__numbers">Page {{page}} of {{pages}}</span>
+    </li>
+
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    <li class="page-item">
       {{#if next}}
-        <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon" href="{{page_url next}}">
-          <i class="icon-angle-right">&raquo;</i>
-        </a>
+        <a class="page-link" href="{{page_url next}}"><i class="fas fa-chevron-right"></i></a>
       {{/if}}
-  </nav>
-</div>
+    </li>
+  </ul>
+</nav>

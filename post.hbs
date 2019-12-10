@@ -2,81 +2,64 @@
 
 {{#post}}
 
-<main class="mdl-layout__content" role="main">
+<main role="main">
   <div class="page-content">
-    <div class="mdl-grid mdl-grid-fs fixed-width">
-      <div class="mdl-cell mdl-cell--8-col mdl-grid mdl-grid-fs">
-        {{> bsa-1  }}
-        <article class="mdl-cell mdl-card mdl-card__large angular-expo--shadow">
-          <a class="mdl-card__media mdl-card__media-large" href="{{ url }}">
-            <img class="article-image" src="{{feature_image}}" border="0" alt="{{title}} - Angular">
-          </a>
-          <div class="mdl-card__supporting-text mdl-card__date">
-              <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
-          </div>
-          <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-              {{content}}
-          </div>
-          <div class="mdl-card__actions mdl-card__social">
-
-            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                <i class="icon-twitter"></i>
-                <span class="hidden">Twitter</span>
-            </a>
-            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                <i class="icon-facebook"></i>
-                <span class="hidden">Facebook</span>
-            </a>
-            <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--linkedin" href="http://www.linkedin.com/shareArticle?url={{url absolute="true"}}&title={{title}}"
-                onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
-                <i class="icon-linkedin"></i>
-                <span class="hidden">LinkedIn</span>
-            </a>
-          </div>
-        </article>
-
-        <div class="mdl-grid mdl-grid-fs mdl-grid--fill">
-          {{#next_post}}
-            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card angular-expo--shadow">
-              <a class="read-next-story {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
-                <a class="mdl-card__media" href="{{ url }}">
-                  <div class="article-image" style="background-image:url({{feature_image}})"></div>
+    <img src="{{asset "img/bg_header.svg"}}" alt="background header" class="background-header">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-md-8">
+            <div class="card post-card">
+              <div class="card-header">
+                <a class="" href="{{ url }}">
+                  <img class="article-image card-img-top" src="{{feature_image}}" border="0" alt="{{title}} - Angular">
                 </a>
-                <div class="mdl-card__title">
-                  <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+              </div>
+              <div class="card-body">
+                <div class="container">
+                  <a class="card-title" target="_blank" href="{{ url }}" >{{title}}</a>
+                  <p>
+                    {{content}}
+                  </p>
+                  <div class="tags-area">
+                    <span href="{{url}}">
+                      <b>
+                        {{tags}}
+                      </b>
+                    </span>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
-          {{/next_post}}
-          {{^next_post}}
-            <div class="mdl-cell mdl-cell--6-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          {{/next_post}}
-          {{#prev_post}}
-            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card angular-expo--shadow">
-              <a class="read-next-story {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
-                <a class="mdl-card__media" href="{{ url }}">
-                  <div class="article-image" style="background-image:url({{feature_image}})"></div>
-                </a>
-                <div class="mdl-card__title">
-                  <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="card recent-posts">
+                    <div class="card-header d-flex">
+                      <i class="far fa-file-alt"></i>
+                      <h5>Recent posts</h5>
+                    </div>
+                    <div class="card-body">
+                      {{#get "posts" limit="5" as |recents|}}
+                        <ul>
+                          {{#foreach recents}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                          {{/foreach}}
+                        </ul>
+                      {{/get}}
+                    </div>
+                  </div>
+
                 </div>
-              </a>
             </div>
-          {{/prev_post}}
         </div>
-
+        <div class="col-md-4 col-sm-12 ml-auto">
+          {{> sidebar0}}
+        </div>
       </div>
-      <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-      {{> sidebar}}
+      <div class="row margin-100">
+        {{> subscribe-area}}
+      </div>
     </div>
-
-
-
+    <img src="{{asset "img/bg.svg"}}" alt="background" class="post-page-background">
   </div>
 </main>
 
