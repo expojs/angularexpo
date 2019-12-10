@@ -78,7 +78,7 @@
     .submit-button{
       border-radius: 30px;
       font-size: $font-size-default;;
-      padding: 10px 24px;
+      padding: $buttons-padding;
       text-transform: uppercase;
       color: $button-default;
 

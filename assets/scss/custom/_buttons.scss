@@ -7,7 +7,7 @@
   color: $white-color;
   border-radius: 30px;
   font-size: $font-size-default;;
-  padding: 10px 24px;
+  padding: $buttons-padding;
   text-transform: uppercase;
 
   &:hover{
@@ -26,7 +26,7 @@
 .btn-danger{
   border-radius: 30px;
   font-size: $font-size-default;;
-  padding: 10px 24px;
+  padding: $buttons-padding;
   text-transform: uppercase;
 
   &:hover{
@@ -41,7 +41,7 @@
 .btn-outline-danger{
   border-radius: 30px;
   font-size: $font-size-default;;
-  padding: 10px 24px;
+  padding: $buttons-padding;
   text-transform: uppercase;
   color: $button-default;
 
