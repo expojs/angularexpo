@@ -76,7 +76,7 @@
       }
     }
     .submit-button{
-      border-radius: 30px;
+      border-radius: $button-border-radious;
       font-size: $font-size-default;;
       padding: $buttons-padding;
       text-transform: uppercase;

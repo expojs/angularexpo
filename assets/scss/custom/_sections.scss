@@ -90,7 +90,7 @@
     position: relative;
 
     .form-control{
-      border-radius: 30px;
+      border-radius: $button-border-radious;
       border: 1px solid #d7d7d7;
       color: $text-primary;
       display: block;
@@ -109,7 +109,7 @@
       position: absolute;
       right: 10px;
       border: none;
-      border-radius: 30px;
+      border-radius: $button-border-radious;
       display: block;
       font-weight: 200;
       font-size: 13px;

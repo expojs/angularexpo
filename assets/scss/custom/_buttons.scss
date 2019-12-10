@@ -5,7 +5,7 @@
 .btn-secondary{
   background-color: #223464;
   color: $white-color;
-  border-radius: 30px;
+  border-radius: $button-border-radious;
   font-size: $font-size-default;;
   padding: $buttons-padding;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 }
 
 .btn-danger{
-  border-radius: 30px;
+  border-radius: $button-border-radious;
   font-size: $font-size-default;;
   padding: $buttons-padding;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
 }
 
 .btn-outline-danger{
-  border-radius: 30px;
+  border-radius: $button-border-radious;
   font-size: $font-size-default;;
   padding: $buttons-padding;
   text-transform: uppercase;
