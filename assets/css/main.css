@@ -7505,8 +7505,12 @@ a {
       color: #223464;
       font-weight: lighter;
       margin: 0; }
-  .footer .nav .nav-item a {
-    text-transform: capitalize;
+  .footer .nav .nav-item {
+    padding: 3px 0; }
+    .footer .nav .nav-item a {
+      text-transform: uppercase;
+      color: #223464; }
+  .footer .special-thanks {
     color: #223464; }
 
 @media (max-width: 576px) {

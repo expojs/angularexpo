@@ -65,11 +65,16 @@
 
   .nav {
     .nav-item {
+      padding: 3px 0;
       a{
-        text-transform: capitalize;
+        text-transform: uppercase;
         color: $text-primary;
       }
     }
+  }
+
+  .special-thanks{
+    color: $text-primary;
   }
 }
 @media (max-width: 576px) {
