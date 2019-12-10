@@ -7272,14 +7272,14 @@ a {
       display: block;
       top: 7px;
       background: #EC250D;
-      color: #ffffff; }
+      color: #FFFFFF; }
       .section-search .form-search .btn-submit .icon-search {
         font-size: 18px;
         position: relative;
         top: -7px;
         right: 1px; }
   .section-search #my-custom-results {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 6px;
     width: auto;
     max-width: 250px;
@@ -7337,7 +7337,7 @@ a {
       padding: 6px 20px;
       top: 9px;
       background: #EC250D;
-      color: #ffffff; }
+      color: #FFFFFF; }
 
 .page-content {
   margin-top: 100px; }
@@ -7368,7 +7368,7 @@ a {
   padding: 10px 24px;
   text-transform: uppercase; }
   .btn-danger:hover {
-    color: #ffffff !important; }
+    color: #FFFFFF !important; }
 
 .fa-github, .fa-twitter {
   font-size: 21px !important; }
@@ -7380,7 +7380,7 @@ a {
   text-transform: uppercase;
   color: #F44336; }
   .btn-outline-danger:hover {
-    color: #ffffff !important; }
+    color: #FFFFFF !important; }
 
 .pagination .page-item .page-link {
   font-size: 14px;
@@ -7451,7 +7451,7 @@ a {
     text-transform: uppercase;
     color: #F44336; }
     .card-subscribe .card-body .submit-button:hover {
-      color: #ffffff; }
+      color: #FFFFFF; }
   .card-subscribe .card-body .clear {
     margin-top: 30px; }
 
@@ -7471,7 +7471,7 @@ a {
     width: 140px; }
     .footer .made-with-react .float-buttons, .footer .vuejs-expo .float-buttons {
       display: block;
-      background-color: #fff;
+      background-color: #FFFFFF;
       border-radius: 50%;
       box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
       height: 80px;
@@ -7548,7 +7548,7 @@ a {
     display: flex;
     box-shadow: 0 15px 30px 0 rgba(48, 54, 77, 0.1);
     padding: 10px;
-    background: #ffffff; }
+    background: #FFFFFF; }
     .subscribe-area .subscribe-input .form-group.form-subscribe i {
       font-size: 20px;
       padding: 8px; }
@@ -7573,7 +7573,7 @@ a {
       padding-bottom: 8px;
       font-weight: 200;
       background: #EC250D;
-      color: #ffffff; }
+      color: #FFFFFF; }
 
 .subscribe-image {
   width: 100%; }

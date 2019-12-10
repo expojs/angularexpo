@@ -30,7 +30,7 @@
       display: block;
       top: 7px;
       background: $brand-state;
-      color: #ffffff;
+      color: $white-color;
 
       .icon-search{
         font-size: 18px;
@@ -42,7 +42,7 @@
   }
 
   #my-custom-results{
-    background-color: #fff;
+    background-color: $white-color;
     border-radius: 6px;
     width: auto;
     max-width: 250px;
@@ -116,7 +116,7 @@
       padding: 6px 20px;
       top: 9px;
       background: $brand-state;
-      color: #ffffff;
+      color: $white-color;
     }
   }
 }

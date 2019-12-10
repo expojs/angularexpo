@@ -4,7 +4,7 @@
 
 .btn-secondary{
   background-color: #223464;
-  color: #FFFFFF;
+  color: $white-color;
   border-radius: 30px;
   font-size: $font-size-default;;
   padding: 10px 24px;
@@ -12,7 +12,7 @@
 
   &:hover{
     background-color: #223464;
-    color: #FFFFFF !important;
+    color: $white-color !important;
   }
 }
 
@@ -30,7 +30,7 @@
   text-transform: uppercase;
 
   &:hover{
-    color: #ffffff !important;
+    color: $white-color !important;
   }
 }
 
@@ -46,6 +46,6 @@
   color: $button-default;
 
   &:hover{
-    color: #ffffff !important;
+    color: $white-color !important;
   }
 }
