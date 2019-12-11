@@ -89,6 +89,16 @@
           $(this).closest('.navbar').addClass('navbar-transparent').removeClass('bg-white');
       });
     });
+    var nav;
+    function yScroll(){
+      nav = $('#nav');
+      yPos = window.pageYOffset;
+      nav.removeClass("bg-white");
+      if(yPos > 150){
+          nav.addClass("bg-white");
+      }
+    }
+    window.addEventListener("scroll", yScroll);
 </script>
 
 
