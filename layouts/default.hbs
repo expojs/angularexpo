@@ -36,7 +36,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHKJWP4"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
   {{navigation}}
   {{{body}}}
   {{> footer}}
@@ -81,6 +81,15 @@
             </div>`;
         }
     })
+    $(document).ready(function() {
+
+      $('.collapse').on('show.bs.collapse', function() {
+        $(this).closest('.navbar').removeClass('navbar-transparent').addClass('bg-white');
+      }).on('hide.bs.collapse', function() {
+          $(this).closest('.navbar').addClass('navbar-transparent').removeClass('bg-white');
+      });
+    });
 </script>
+
 
 </html>
