@@ -7105,6 +7105,13 @@ a {
   outline: none;
   box-shadow: none; }
 
+.white-space {
+  background-color: #fdfcff;
+  width: 10000px;
+  height: 558px;
+  position: absolute;
+  right: -9990px; }
+
 .card {
   width: 100%;
   overflow: hidden;
