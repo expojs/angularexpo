@@ -1,15 +1,25 @@
-<article class="mdl-cell mdl-card angular-expo--shadow" style="max-height: 400px;">
-  <a class="mdl-card__media" href="{{ url }}">
-    <div style="background-image:url({{feature_image}})" title="{{title}}"></div>
-  </a>
-  <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text"><a href="{{ url }}">{{title}}</a></h2>
+
+<div class="card card-post">
+  <div class="card-header">
+    <a href="{{ url }}" class="card-header-url">
+      <img src="{{feature_image}}" alt="" class="card-img-top">
+    </a>
   </div>
-  <div class="mdl-card__supporting-text">
-      <div class="content-preview">{{content}}</div>
-      <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+  <div class="card-body">
+    <div class="tags-area">
+      <span href="{{url}}" class="text-danger">
+        <b>
+          {{#primary_tag}}
+          <a href="{{url}}">{{name}}</a>
+          {{/primary_tag}}
+
+        </b>
+      </span>
+    </div>
+    <a class="card-title" target="_blank" href="{{ url }}" >{{title}}</a>
+    <p class="card-text">{{excerpt characters="150"}}...</p>
   </div>
-  <div class="mdl-card__actions">
-    <a href="{{ url }}" class="mdl-button">Read more</a>
+  <div class="card-footer">
+    <a target="_blank" class="btn btn-outline-danger btn-round" href="{{ url }}">See Details</a>
   </div>
-</article>
+</div>
