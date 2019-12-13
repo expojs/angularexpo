@@ -7072,7 +7072,8 @@ body {
   background-color: #F5F5FC;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  line-height: 1.428571429; }
+  line-height: 1.428571429;
+  overflow-x: hidden; }
 
 a {
   color: #223464;
@@ -7084,7 +7085,6 @@ a {
 .image-svg {
   width: 1000px;
   position: absolute;
-  margin-top: -60px;
   right: 0;
   z-index: -1; }
 
@@ -7108,9 +7108,12 @@ a {
 .white-space {
   background-color: #fdfcff;
   width: 10000px;
-  height: 570px;
+  height: 706px;
   position: absolute;
   right: -10000px; }
+
+.image-svg, .white-space {
+  margin-top: -149px; }
 
 .card {
   width: 100%;
@@ -7307,7 +7310,7 @@ a {
       padding-bottom: 20px; }
 
 .section-header {
-  margin-bottom: 150px; }
+  margin: 150px 0; }
   .section-header .text-description {
     font-size: 18px;
     font-weight: lighter;
