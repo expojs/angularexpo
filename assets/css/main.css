@@ -7211,7 +7211,8 @@ a {
   background: transparent; }
 
 .navbar {
-  transition: all .3s ease 0s; }
+  transition: all .3s ease 0s;
+  padding: 22px 0; }
   .navbar.bg-white {
     box-shadow: 0 15px 30px 0 rgba(60, 72, 88, 0.05); }
   .navbar .navbar-brand,
@@ -7224,7 +7225,7 @@ a {
     margin-right: 20px; }
   .navbar .navbar-brand {
     font-weight: lighter;
-    margin-bottom: -3px; }
+    margin-bottom: -1px; }
     .navbar .navbar-brand img {
       position: relative;
       top: -3px; }
