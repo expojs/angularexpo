@@ -94,16 +94,16 @@
     .card-title{
       font-size: 21px;
       font-weight: bold;
-      color: $card-title;
+      color: $text-primary;
 
       &:hover{
-        color: $card-title !important;
+        color: $text-primary !important;
       }
     }
 
     .card-text{
       font-size: $font-size-default;;
-      color: #999999;
+      color: $text-primary;
       font-weight: lighter;
       line-height: 24px;
     }
@@ -118,7 +118,7 @@
     }
     .card-body .container{
       p{
-        color: #999999;
+        color: $text-primary;
       }
     }
   }
