@@ -4,7 +4,7 @@
     {{> post-creativetim }}
   </div>
 
-    {{#foreach posts}}
+    {{#foreach posts  from="1" to="5"}}
     {{^has tag="blog"}}
       <div class="col-lg-6 col-md-12 col-12">
           {{> post}}
